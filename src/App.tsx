@@ -9,10 +9,12 @@ import { Hero } from "./components/Hero";
 import { Sponsors } from "./components/Sponsors"; // Section 2: Trust Strip
 import { EmotionalReframe } from "./components/EmotionalReframe"; // Section 3
 import { ProblemMirror } from "./components/ProblemMirror"; // Section 4
+import { TargetAudience } from "./components/TargetAudience"; // Section 4b: Target Audience
 import { Consequences } from "./components/Consequences"; // Section 5
 import { FalseSolutions } from "./components/FalseSolutions"; // Section 6
 import { Differentiator } from "./components/Differentiator"; // Section 7
 import { Outcomes } from "./components/Outcomes"; // Section 8
+import { Relief } from "./components/Relief"; // Section 8b: What goes away
 import { Services } from "./components/Services"; // Section 9: Implementation Areas
 import { Timeline } from "./components/Timeline"; // Section 10: Process
 import { Testimonials } from "./components/Testimonials"; // Section 11: Social Proof
@@ -35,6 +37,8 @@ function App() {
       <EmotionalReframe />
       {/* Section 4: Problem Mirror */}
       <ProblemMirror />
+      {/* Section 4b: Target Audience */}
+      <TargetAudience />
       {/* Section 5: Consequences */}
       <Consequences />
       {/* Section 6: False Solutions */}
@@ -43,6 +47,8 @@ function App() {
       <Differentiator />
       {/* Section 8: Outcomes */}
       <Outcomes />
+      {/* Section 8b: What goes away (Relief) */}
+      <Relief />
       {/* Section 9: Implementation Areas (Services) */}
       <Services />
       {/* Section 10: Process (Timeline) */}

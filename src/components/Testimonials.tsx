@@ -7,13 +7,12 @@ export const Testimonials = () => {
     <section id="testimonials" className="container py-24 sm:py-32">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-light tracking-elegant">
-          What our
+          Was unsere
           <br />
-          <span className="font-display italic text-primary">clients say</span>
+          <span className="font-display italic text-primary">Kunden sagen</span>
         </h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-          See what our clients have to say about working with us and the results
-          we helped them achieve.
+          Ergebnisse von Unternehmern, die den Schritt von Chaos zu System gemacht haben.
         </p>
       </div>
 

@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import { finalCta, roiSection } from "@/config/content";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 export const Cta = () => {
   return (
@@ -14,8 +14,8 @@ export const Cta = () => {
           <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12">
             {roiSection.items.map((item, index) => (
               <div key={index} className="text-center">
-                <p className="text-foreground font-medium">{item.metric}</p>
-                <p className="text-sm text-primary">{item.cost}</p>
+                <p className="text-2xl font-semibold text-primary">{item.metric}</p>
+                <p className="text-sm text-muted-foreground">{item.cost}</p>
               </div>
             ))}
           </div>
@@ -39,9 +39,21 @@ export const Cta = () => {
               {finalCta.subheadline}
             </p>
 
-            <p className="text-muted-foreground text-lg md:text-xl mb-10 leading-relaxed">
+            <p className="text-muted-foreground text-lg md:text-xl mb-8 leading-relaxed">
               {finalCta.description}
             </p>
+
+            {/* Risk Reversals */}
+            {finalCta.riskReversals && (
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
+                {finalCta.riskReversals.map((item, index) => (
+                  <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            )}
 
             <Button
               asChild

@@ -11,12 +11,19 @@
 // ============================================
 export const siteConfig = {
   name: "Jousef Murad",
-  title: "Mehr Marge.",
-  titleAccent: "Mehr Kapazität.", // Displayed in italic serif font
+  title: "Skalieren ohne Neueinstellungen.",
+  titleAccent: "Wachsen ohne Mehrarbeit.", // Displayed in italic serif font
   tagline:
-    "Skaliere durch KI-gestützte Prozessarchitektur – nicht durch mehr Personal.",
+    "Dein Fulfillment läuft manuell. Deshalb wächst dein Aufwand mit jedem neuen Kunden – statt deine Marge.",
+  // ABTF Bullet Points: Symptome & Frustrationen (keine Lösungen!)
+  bulletPoints: [
+    "Du bist in jedem Projekt der Engpass",
+    "Mehr Umsatz bedeutet mehr Stress, nicht mehr Gewinn",
+    "Dein Team fragt dich bei jeder Kleinigkeit",
+    "Urlaub? Theoretisch möglich. Praktisch ein Risiko.",
+  ],
   cta: {
-    text: "Kostenlose Analyse buchen",
+    text: "Unverbindliche Analyse anfragen",
     href: "https://calendly.com/your-link/30min",
   },
   available: true,
@@ -37,11 +44,11 @@ export const navLinks = [
 // Psychology: Credibility anchor with specific numbers
 // ============================================
 export const trustMetrics = {
-  headline: "Vertrauen durch Ergebnisse",
+  headline: "Seit 8 Jahren. Für über 100 Unternehmen.",
   metrics: [
-    { value: "100+", label: "implementierte KI- und Automationssysteme" },
-    { value: "50.000+", label: "eingesparte Arbeitsstunden" },
-    { value: "3x", label: "durchschnittliche Kapazitätssteigerung" },
+    { value: "100+", label: "Systeme implementiert" },
+    { value: "50.000+", label: "manuelle Stunden ersetzt" },
+    { value: "8+ Jahre", label: "Erfahrung in Prozessarchitektur" },
   ],
 };
 
@@ -59,15 +66,13 @@ export const clientLogos = [
 // Psychology: Remove self-blame, create safety
 // ============================================
 export const emotionalReframe = {
-  headline: "Es liegt nicht an dir.",
-  subheadline: "Das Wachstumsparadox ist real.",
-  content: `Du hast härter gearbeitet als alle anderen. Ein echtes Unternehmen aufgebaut.
-Und trotzdem: Jeder neue Kunde bringt mehr Chaos statt mehr Marge.
+  headline: "Du hast alles richtig gemacht.",
+  subheadline: "Trotzdem funktioniert es nicht.",
+  content: `Du hast akquiriert. Geliefert. Ein Team aufgebaut. Umsatz gemacht.
 
-Das Problem ist nicht dein Einsatz – sondern dass Wachstum ohne Architektur
-Komplexität erzeugt, die sich mit jedem neuen Mitarbeiter, Tool und Prozess potenziert.
+Aber irgendwann hast du gemerkt: Je mehr du wächst, desto mehr arbeitest du. Nicht weniger. Jeder neue Kunde bringt Umsatz – aber auch Aufwand. Die Marge? Bleibt gleich. Oder sinkt.
 
-Alle Entscheidungen und Übergaben ruhen noch immer auf deinen Schultern.`,
+Das Problem ist nicht dein Einsatz. Das Problem ist, dass dein Unternehmen auf dir basiert – statt auf Systemen.`,
 };
 
 // ============================================
@@ -75,39 +80,64 @@ Alle Entscheidungen und Übergaben ruhen noch immer auf deinen Schultern.`,
 // Psychology: Recognition ("Das bin ich!")
 // ============================================
 export const problemMirror = {
-  headline: "Kommt dir das bekannt vor?",
+  headline: "Die Symptome, die niemand ausspricht:",
   problems: [
     {
-      title: "Engpass-Abhängigkeit",
-      description: "Jede Entscheidung und Übergabe geht noch durch dich",
+      title: "Zeitverlust",
+      description: "Du verbringst Stunden mit Koordination, Rückfragen, Nachfassen. Wertschöpfung? Später.",
       icon: "UserX",
     },
     {
-      title: "Margenfresser",
-      description: "Koordinationsaufwand frisst die Marge trotz steigendem Umsatz",
+      title: "Kontrollverlust",
+      description: "Du weißt nicht, wo Projekte stehen – bis jemand eskaliert.",
       icon: "TrendingDown",
     },
     {
-      title: "Unvorhersehbare Lieferung",
-      description: "Qualität hängt davon ab, wer gerade arbeitet",
+      title: "Mitarbeiter-Abhängigkeit",
+      description: "Wenn dein bester Mann kündigt, bricht die Hälfte deines Fulfillments weg.",
       icon: "AlertTriangle",
     },
     {
-      title: "Dauerhaftes Feuerlöschen",
-      description: "Keine Zeit für Strategie, weil du ständig Brände löschst",
+      title: "Manuelle Prozesse",
+      description: "Jede Übergabe ist ein Risiko. Jede Aufgabe braucht Erklärung. Jedes Mal von vorn.",
       icon: "Flame",
     },
     {
-      title: "Daten-Chaos",
-      description: "Informationen verstreut über 12 verschiedene Tools",
+      title: "Skalierungsproblem",
+      description: "Mehr Kunden = mehr Chaos. Nicht mehr Marge.",
       icon: "Database",
     },
     {
-      title: "Komplexitätsspirale",
-      description: "Jedes Wachstum erhöht die Komplexität statt sie zu reduzieren",
+      title: "Operative Überlastung",
+      description: "Du arbeitest IM Unternehmen. Nie AM Unternehmen.",
       icon: "RefreshCw",
     },
   ],
+};
+
+// ============================================
+// Section 4b: Target Audience
+// Psychology: Clear qualification / disqualification
+// ============================================
+export const targetAudience = {
+  headline: "Für wen das ist – und für wen nicht.",
+  forWhom: {
+    title: "Das ist für dich, wenn:",
+    items: [
+      "Du eine Agentur, Beratung oder B2B-Dienstleistung führst",
+      "Du zwischen 500K und 10M Umsatz machst",
+      "Du merkst, dass Wachstum Chaos bringt statt Freiheit",
+      "Du bereit bist, Prozesse zu ändern – nicht nur Tools zu kaufen",
+    ],
+  },
+  notForWhom: {
+    title: "Das ist nichts für dich, wenn:",
+    items: [
+      "Du gerade erst startest und noch keine funktionierenden Prozesse hast",
+      "Du nach einem Quick-Fix oder einer Wunderwaffe suchst",
+      "Du nicht bereit bist, in die Infrastruktur deines Unternehmens zu investieren",
+    ],
+  },
 };
 
 // ============================================
@@ -115,20 +145,20 @@ export const problemMirror = {
 // Psychology: Cost of inaction (loss aversion)
 // ============================================
 export const consequences = {
-  headline: "Was passiert, wenn sich nichts ändert?",
-  subheadline: "Wachstum ohne Architektur = kontrollierter Kontrollverlust",
+  headline: "Ohne Veränderung passiert Folgendes:",
+  subheadline: "Mehr vom Gleichen führt zu mehr vom Gleichen.",
   items: [
-    "Jede neue Maßnahme wird zum Risiko",
-    "Deine besten Leute brennen aus – oder gehen",
-    "Wettbewerber mit besseren Systemen überholen dich",
-    "Jeder neue Mitarbeiter erhöht die Komplexität, nicht die Kapazität",
+    "Du arbeitest härter, aber der Gewinn bleibt gleich",
+    "Deine besten Leute kündigen – innerlich oder offiziell",
+    "Wettbewerber mit besseren Systemen ziehen an dir vorbei",
+    "Jede Neueinstellung macht das Chaos teurer, nicht besser",
   ],
   costPerDay: {
-    headline: "Die Kosten des Wartens",
+    headline: "Was dich jeder Tag kostet:",
     items: [
-      { metric: "2+ Stunden", description: "täglich verloren durch Koordinationsaufwand" },
-      { metric: "500€+", description: "Margenverlust pro Tag" },
-      { metric: "1 Tag", description: "näher am Burnout deiner Schlüsselpersonen" },
+      { metric: "2+ Stunden", description: "für Koordination statt Wertschöpfung" },
+      { metric: "500€+", description: "Marge, die durch Reibung verloren geht" },
+      { metric: "1 Tag", description: "näher am Burnout – deinem oder dem deines Teams" },
     ],
   },
 };
@@ -138,26 +168,26 @@ export const consequences = {
 // Psychology: Disqualify what they've already tried
 // ============================================
 export const falseSolutions = {
-  headline: "Was nicht funktioniert",
-  subheadline: "Du hast wahrscheinlich schon versucht:",
+  headline: "Das hast du wahrscheinlich schon versucht:",
+  subheadline: "Und es hat nicht funktioniert.",
   solutions: [
     {
-      title: "Mehr Personal einstellen",
-      problem: "Die Marge wird schlechter – Koordinationsaufwand skaliert mit Headcount",
+      title: "Mehr Leute einstellen",
+      problem: "Ergebnis: Höhere Kosten, gleiche Probleme. Koordination skaliert schneller als Output.",
       icon: "Users",
     },
     {
-      title: "Weitere Tools hinzufügen",
-      problem: "Komplexität steigt – Tools reden nicht miteinander",
+      title: "Noch ein Tool einführen",
+      problem: "Ergebnis: Tool Nr. 13 redet nicht mit Tool Nr. 12. Mehr Komplexität, nicht weniger.",
       icon: "Puzzle",
     },
     {
-      title: "Einzelne Automatisierungen",
-      problem: "Neue Probleme entstehen – Automation ohne Architektur beschleunigt nur das Chaos",
+      title: "Einzelne Schritte automatisieren",
+      problem: "Ergebnis: Automation ohne Architektur macht Chaos schneller – nicht besser.",
       icon: "Zap",
     },
   ],
-  conclusion: "Keins davon adressiert die Wurzel des Problems: fehlende Prozessarchitektur.",
+  conclusion: "Das Problem ist nicht die Ausführung. Das Problem ist die fehlende Struktur.",
 };
 
 // ============================================
@@ -165,21 +195,21 @@ export const falseSolutions = {
 // Psychology: Your unique insight/approach
 // ============================================
 export const differentiator = {
-  headline: "Der Unterschied, der zählt",
+  headline: "Warum bisherige Ansätze scheitern",
   insight: {
     left: {
-      title: "Automation",
-      description: "führt Aufgaben aus",
+      title: "Der alte Weg",
+      description: "Manuell. Reaktiv. Personenabhängig. Jede Aufgabe braucht einen Menschen. Jede Entscheidung geht durch dich.",
     },
     right: {
-      title: "Architektur",
-      description: "definiert Abläufe, Verantwortlichkeiten, Ausnahmen, Eskalationen und Qualitätskontrolle",
+      title: "Der systemische Weg",
+      description: "Strukturiert. Planbar. Automatisiert. Das System weiß, was zu tun ist – auch wenn du nicht da bist.",
     },
   },
-  conclusion: `Ohne Architektur beschleunigt Automation nur das Chaos.
+  conclusion: `Du brauchst keine besseren Mitarbeiter. Du brauchst bessere Infrastruktur.
 
-Wir bauen zuerst die Architektur – dann automatisieren wir.`,
-  keyInsight: "Reaktives vs. geplantes Operieren: Der Unterschied zwischen Überleben und Skalieren.",
+Wir bauen die Prozessarchitektur, die dein Wachstum trägt – nicht limitiert.`,
+  keyInsight: "Systeme skalieren. Menschen nicht.",
 };
 
 // ============================================
@@ -187,28 +217,44 @@ Wir bauen zuerst die Architektur – dann automatisieren wir.`,
 // Psychology: Tangible results they'll achieve
 // ============================================
 export const outcomes = {
-  headline: "Was du erreichst",
+  headline: "Was du bekommst:",
   items: [
     {
-      title: "Kapazität ohne Neueinstellungen",
-      description: "3x mehr Output mit dem gleichen Team",
+      title: "Kapazität ohne Headcount",
+      description: "Mehr Kunden, gleiches Team. Dein Output skaliert, deine Kosten nicht.",
       icon: "TrendingUp",
     },
     {
-      title: "Replizierbare Qualität",
-      description: "Konsistente Ergebnisse – unabhängig davon, wer arbeitet",
+      title: "Planbare Qualität",
+      description: "Das Ergebnis hängt vom Prozess ab – nicht von der Tagesform.",
       icon: "CheckCircle",
     },
     {
-      title: "Bessere Margen",
-      description: "15-25% Margensteigerung durch reduzierten Nacharbeitsaufwand",
+      title: "Höhere Marge",
+      description: "Weniger Reibung, weniger Nacharbeit, mehr Gewinn pro Projekt.",
       icon: "PiggyBank",
     },
     {
-      title: "Strategische Zeit",
-      description: "Endlich Zeit für Wachstum statt Feuerlöschen",
+      title: "Deine Zeit zurück",
+      description: "Du arbeitest am Unternehmen – nicht mehr nur darin.",
       icon: "Clock",
     },
+  ],
+};
+
+// ============================================
+// Section 8b: Relief / What goes away
+// Psychology: "Du musst nicht mehr..." - very powerful
+// ============================================
+export const relief = {
+  headline: "Was wegfällt:",
+  items: [
+    "Du musst nicht mehr bei jeder Übergabe dabei sein",
+    "Du musst nicht mehr jeden Morgen Slack-Brände löschen",
+    "Du musst nicht mehr erklären, was 'eigentlich gemeint war'",
+    "Du musst nicht mehr hoffen, dass niemand kündigt",
+    "Du musst nicht mehr zwischen Akquise und Fulfillment wählen",
+    "Du musst nicht mehr Sonntags E-Mails vorbereiten",
   ],
 };
 
@@ -224,33 +270,33 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: "Vertriebsprozesse",
-    description: "Von Lead bis Abschluss – durchgängig automatisiert und messbar",
+    title: "Vertrieb",
+    description: "Lead rein, Abschluss raus. Ohne manuelles Nachfassen.",
     icon: "Target",
   },
   {
-    title: "Projektabwicklung",
-    description: "Standardisierte Fulfillment-Prozesse mit klaren Übergaben",
+    title: "Fulfillment",
+    description: "Projekte laufen nach Plan – auch wenn du nicht hinschaust.",
     icon: "FolderKanban",
   },
   {
     title: "Kundenkommunikation",
-    description: "Automatisierte Touchpoints ohne Qualitätsverlust",
+    description: "Professionelle Touchpoints. Automatisch. Ohne Copy-Paste.",
     icon: "MessageSquare",
   },
   {
     title: "Interne Übergaben",
-    description: "Nahtlose Handoffs zwischen Teams und Abteilungen",
+    description: "Von Team A zu Team B – ohne Informationsverlust.",
     icon: "ArrowLeftRight",
   },
   {
-    title: "Reporting & Analytics",
-    description: "Echtzeit-Einblicke statt Excel-Chaos",
+    title: "Reporting",
+    description: "Zahlen auf Knopfdruck. Keine Excel-Akrobatik mehr.",
     icon: "BarChart3",
   },
   {
-    title: "KI-gestützte Aufgaben",
-    description: "Intelligente Assistenz für wiederkehrende Entscheidungen",
+    title: "KI-Workflows",
+    description: "Wiederkehrende Entscheidungen trifft das System. Nicht du.",
     icon: "Bot",
   },
 ];
@@ -271,41 +317,54 @@ export interface ProcessStep {
 export const processSteps: ProcessStep[] = [
   {
     step: "01",
-    title: "Systemanalyse",
-    subtitle: "VERSTEHEN",
+    title: "Anfrage",
+    subtitle: "STARTEN",
     description:
-      "Wir analysieren deine bestehenden Prozesse, identifizieren Engpässe und dokumentieren den Ist-Zustand. Keine Annahmen – nur Fakten.",
-    duration: "KOSTENLOS",
+      "Du buchst einen Termin. Wir schauen, ob es passt. Kein Pitch, keine Verpflichtung.",
+    duration: "2 MINUTEN",
     items: [
-      "Prozess-Mapping deiner kritischen Abläufe",
-      "Identifikation von Engpässen und Margenfressern",
-      "Klarer Report mit Handlungsempfehlungen",
+      "Einfache Terminbuchung",
+      "Keine Vorbereitungszeit nötig",
+      "Erste Einschätzung, ob wir helfen können",
     ],
   },
   {
     step: "02",
-    title: "Architektur-Entwicklung",
-    subtitle: "DESIGNEN",
+    title: "Analyse",
+    subtitle: "VERSTEHEN",
     description:
-      "Wir entwickeln die Prozessarchitektur: Abläufe, Verantwortlichkeiten, Ausnahmen, Eskalationen. Das Fundament für skalierbare Automation.",
-    duration: "1-2 WOCHEN",
+      "Wir analysieren deine IST-Situation: Wo verlierst du Zeit? Wo bleibt Marge liegen? Wo sind die echten Engpässe?",
+    duration: "KOSTENLOS",
     items: [
-      "Prozessarchitektur-Blueprint",
-      "Klare Verantwortlichkeiten und Eskalationspfade",
-      "Technische Spezifikation für Implementation",
+      "IST-Analyse deiner kritischen Prozesse",
+      "Identifikation der größten Hebel",
+      "Klarer Report mit konkreten Zahlen",
     ],
   },
   {
     step: "03",
-    title: "Technische Umsetzung",
+    title: "Beratung",
+    subtitle: "PLANEN",
+    description:
+      "Wir zeigen dir, wie die Lösung aussieht. Du entscheidest, ob du weitermachen willst.",
+    duration: "60 MINUTEN",
+    items: [
+      "Konkrete Roadmap für dein Unternehmen",
+      "Klare Investition und ROI-Rechnung",
+      "Entscheidung ohne Druck",
+    ],
+  },
+  {
+    step: "04",
+    title: "Umsetzung",
     subtitle: "BAUEN",
     description:
-      "Wir implementieren die Systeme, schulen dein Team und stellen sicher, dass alles reibungslos läuft. Hands-on, nicht Hands-off.",
+      "Wir bauen deine Systeme, schulen dein Team und begleiten den Go-Live. Du gibst Feedback, wir machen die Arbeit.",
     duration: "4-8 WOCHEN",
     items: [
-      "System-Setup und Konfiguration",
+      "Komplette Done-for-you Implementierung",
       "Team-Schulung und Dokumentation",
-      "Laufende Optimierung und Support",
+      "Laufende Optimierung nach Go-Live",
     ],
   },
 ];
@@ -328,34 +387,34 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     companyLogo: "https://via.placeholder.com/150x45?text=Agentur+A",
-    quote: "Eine der wertvollsten Investitionen, die wir gemacht haben!",
+    quote: "3x Kapazität. Null Neueinstellungen.",
     description:
-      "Das Team hat unsere Ziele verstanden und in eine Prozessarchitektur übersetzt, die unsere Erwartungen übertroffen hat. Wir haben jetzt 3x mehr Kapazität – ohne einen einzigen neuen Mitarbeiter.",
+      "Vorher: Jeder neue Kunde bedeutete Überstunden. Jetzt läuft das Fulfillment systematisch durch – und ich habe wieder Zeit für Akquise.",
     author: {
-      name: "Thomas Müller",
-      title: "Geschäftsführer, Agentur A",
+      name: "Thomas M.",
+      title: "Geschäftsführer, Performance-Agentur",
       image: "https://via.placeholder.com/60x60?text=TM",
     },
   },
   {
     companyLogo: "https://via.placeholder.com/150x45?text=Beratung+B",
-    quote: "Endlich ein Partner, der Prozesse versteht – nicht nur Tools verkauft!",
+    quote: "Drei gescheiterte Automatisierungen vorher. Diese hat funktioniert.",
     description:
-      "Wir hatten schon drei Automatisierungsprojekte, die gescheitert sind. Hier war es anders: Erst die Architektur, dann die Technik. Das Ergebnis spricht für sich.",
+      "Der Unterschied: Erst die Architektur, dann die Technik. Zum ersten Mal laufen unsere Prozesse wirklich – nicht nur auf dem Papier.",
     author: {
-      name: "Sandra Weber",
-      title: "COO, Beratung B",
+      name: "Sandra W.",
+      title: "COO, Beratungsunternehmen",
       image: "https://via.placeholder.com/60x60?text=SW",
     },
   },
   {
     companyLogo: "https://via.placeholder.com/150x45?text=Scale+Up+C",
-    quote: "Von 60-Stunden-Wochen auf 40 – bei 40% mehr Umsatz.",
+    quote: "Von 60 auf 40 Stunden. Bei 40% mehr Umsatz.",
     description:
-      "Die Prozessarchitektur hat nicht nur unsere Effizienz gesteigert, sondern auch meine Lebensqualität als Gründer. Ich kann endlich wieder strategisch arbeiten.",
+      "Ich dachte, mehr Wachstum bedeutet automatisch mehr Stress. Falsch. Mit den richtigen Systemen bedeutet es mehr Kontrolle.",
     author: {
-      name: "Markus Schmidt",
-      title: "Gründer, Scale-Up C",
+      name: "Markus S.",
+      title: "Gründer, B2B-Dienstleister",
       image: "https://via.placeholder.com/60x60?text=MS",
     },
   },
@@ -366,17 +425,17 @@ export const testimonials: Testimonial[] = [
 // Psychology: Make the cost of waiting visible
 // ============================================
 export const roiSection = {
-  headline: "Jeder Tag ohne System kostet dich",
+  headline: "Jeder Tag ohne System kostet dich:",
   items: [
-    { metric: "Jede manuelle Stunde", cost: "kostet Geld" },
-    { metric: "Jeder Prozessbruch", cost: "kostet Fokus" },
-    { metric: "Jede Eskalation", cost: "kostet Wachstum" },
+    { metric: "2+ Stunden", cost: "für Koordination statt Wertschöpfung" },
+    { metric: "500€+", cost: "Marge, die durch Reibung verloren geht" },
+    { metric: "1 Stück", cost: "Energie, die du nie zurückbekommst" },
   ],
   cta: {
-    headline: "In 3 Monaten:",
+    headline: "In 90 Tagen stehst du hier:",
     options: [
-      "Gleiches Chaos, weniger Marge",
-      "Oder: Systematische Skalierung ohne Neueinstellungen",
+      "Entweder: Gleiches Chaos, weniger Marge, mehr Stress",
+      "Oder: Systeme, die laufen – auch ohne dich",
     ],
   },
 };
@@ -392,34 +451,34 @@ export interface FAQItem {
 
 export const faqItems: FAQItem[] = [
   {
-    question: "Für wen ist das geeignet?",
+    question: "Ist das für mich geeignet?",
     answer:
-      "Für B2B-Unternehmen, Agenturen, Berater und Dienstleister, die zwischen 500K und 10M Umsatz machen und an Kapazitätsgrenzen stoßen. Besonders effektiv, wenn du merkst, dass Wachstum mehr Chaos statt mehr Marge bringt.",
+      "Wenn du eine Agentur, Beratung oder B2B-Dienstleistung führst, zwischen 500K und 10M Umsatz machst und merkst, dass mehr Wachstum mehr Chaos bedeutet – ja. Wenn du gerade erst startest oder keine operativen Engpässe hast – nein.",
   },
   {
-    question: "Was unterscheidet euch von anderen Automatisierungsanbietern?",
+    question: "Was macht euch anders als andere Automatisierungsanbieter?",
     answer:
-      "Wir verkaufen keine Tools – wir bauen Architektur. Die meisten Anbieter automatisieren bestehende (oft kaputte) Prozesse. Wir designen zuerst die richtige Struktur, dann automatisieren wir. Das ist der Unterschied zwischen schnellerem Chaos und echte Skalierung.",
+      "Die meisten automatisieren bestehende Prozesse. Problem: Wenn der Prozess kaputt ist, wird er nur schneller kaputt. Wir bauen zuerst die Architektur – die Struktur, die definiert, wer was wann wie macht. Dann automatisieren wir.",
   },
   {
-    question: "Wie lange dauert ein typisches Projekt?",
+    question: "Wie schnell sehe ich Ergebnisse?",
     answer:
-      "Die Systemanalyse ist kostenlos und dauert 1-2 Stunden. Die Architektur-Entwicklung 1-2 Wochen. Die technische Umsetzung 4-8 Wochen. Erste Ergebnisse siehst du oft schon nach 2-3 Wochen.",
+      "Die Analyse dauert 1-2 Stunden. Die Architektur 1-2 Wochen. Die Umsetzung 4-8 Wochen. Erste spürbare Entlastung erlebst du oft schon nach 2-3 Wochen.",
   },
   {
     question: "Was kostet das?",
     answer:
-      "Das hängt vom Scope ab. Die Systemanalyse ist kostenlos – danach hast du einen klaren Report mit ROI-Rechnung. Typische Projekte liegen zwischen 10K und 50K, amortisieren sich aber meist innerhalb von 2-3 Monaten durch eingesparte Koordinationskosten und verbesserte Margen.",
+      "Die Analyse ist kostenlos. Danach hast du einen klaren Report mit ROI-Rechnung. Projekte liegen typischerweise zwischen 10K und 50K – amortisieren sich aber meist in 2-3 Monaten durch eingesparte Koordinationszeit und höhere Margen.",
   },
   {
-    question: "Was, wenn es nicht funktioniert?",
+    question: "Was, wenn es bei mir nicht funktioniert?",
     answer:
-      "In 8 Jahren und 100+ Projekten ist das noch nie passiert. Aber: Wenn wir in der kostenlosen Analyse sehen, dass Prozessarchitektur nicht die richtige Lösung für dein Problem ist, sagen wir dir das ehrlich. Wir arbeiten nur mit Unternehmen, bei denen wir sicher sind, Ergebnisse liefern zu können.",
+      "100+ Projekte. Kein einziges gescheitert. Aber: Wenn wir in der Analyse sehen, dass Prozessarchitektur nicht dein Problem löst, sagen wir dir das. Wir arbeiten nur mit Unternehmen, bei denen wir sicher sind, Ergebnisse zu liefern.",
   },
   {
-    question: "Wie viel meiner Zeit braucht ihr?",
+    question: "Wie viel meiner Zeit kostet das?",
     answer:
-      "Für die Analyse: 1-2 Stunden. Für die Architektur-Phase: ca. 2-3 Stunden pro Woche für Abstimmungen. Für die Umsetzung: minimal – wir machen die Arbeit, du gibst Feedback. Insgesamt deutlich weniger Zeit als du aktuell mit Feuerlöschen verbringst.",
+      "Analyse: 1-2 Stunden. Architektur-Phase: 2-3 Stunden pro Woche für Abstimmungen. Umsetzung: Minimal. Wir machen die Arbeit. Insgesamt weniger Zeit als du aktuell mit Feuerlöschen verbringst.",
   },
 ];
 
@@ -428,15 +487,20 @@ export const faqItems: FAQItem[] = [
 // Psychology: Clear, single action to close
 // ============================================
 export const finalCta = {
-  headline: "Bereit für systematische Skalierung?",
-  subheadline: "Unverbindliche Systemanalyse",
+  headline: "Bereit für den nächsten Schritt?",
+  subheadline: "Kostenlose IST-Analyse",
   description:
-    "Wir analysieren deine Prozesse, identifizieren Engpässe und zeigen dir den Weg zu skalierbaren Systemen – ohne Verpflichtung.",
+    "Wir schauen uns an, wo du Zeit und Marge verlierst. Du bekommst einen klaren Report – auch wenn wir nicht zusammenarbeiten.",
   cta: {
-    text: "Kostenlose Analyse buchen",
+    text: "Jetzt Termin buchen",
     href: "https://calendly.com/your-link/30min",
   },
-  trust: "30 Minuten. Kein Verkaufsgespräch. Nur Klarheit über deine nächsten Schritte.",
+  trust: "30 Minuten. Kein Pitch. Keine Verpflichtung. Nur Klarheit.",
+  riskReversals: [
+    "Kostenlos und unverbindlich",
+    "Kein Verkaufsdruck",
+    "Du bekommst echten Mehrwert – egal ob du buchst",
+  ],
 };
 
 // ============================================
@@ -459,14 +523,14 @@ export const footerLinks = {
 // About Section (kept for compatibility)
 // ============================================
 export const aboutContent = {
-  title: "Über uns",
-  description: `Mit über 8 Jahren Erfahrung in Prozessdesign, Automation und KI
-    helfen wir Unternehmen, ihre Operationen zu transformieren.
-    Unsere Mission: Dich von operativem Chaos befreien, damit du dich auf Wachstum konzentrieren kannst.`,
+  title: "Über",
+  description: `Wir bauen Systeme, die manuelle Prozesse ersetzen. Keine Berater, die Slides liefern. Keine Tool-Verkäufer mit einer Lösung für alles.
+
+Sondern Architekten, die verstehen, wie Agenturen und B2B-Dienstleister wirklich operieren – und was sie brauchen, um ohne mehr Headcount zu skalieren.`,
   stats: [
-    { value: "100+", label: "Systeme implementiert" },
-    { value: "50.000+", label: "Stunden eingespart" },
-    { value: "3x", label: "Kapazitätssteigerung" },
+    { value: "100+", label: "Systeme gebaut" },
+    { value: "50.000+", label: "Stunden eliminiert" },
+    { value: "3x", label: "mehr Kapazität" },
     { value: "8+", label: "Jahre Erfahrung" },
   ],
 };
