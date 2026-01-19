@@ -17,7 +17,11 @@ import { Button, buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { siteConfig, navLinks } from "@/config/content";
 
-export const Navbar = () => {
+interface NavbarProps {
+  hideCta?: boolean;
+}
+
+export const Navbar = ({ hideCta = false }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -61,11 +65,13 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-                  <Button asChild className="mt-4 w-full">
-                    <Link to={siteConfig.cta.href} onClick={() => setIsOpen(false)}>
-                      {siteConfig.cta.text}
-                    </Link>
-                  </Button>
+                  {!hideCta && (
+                    <Button asChild className="mt-4 w-full">
+                      <Link to={siteConfig.cta.href} onClick={() => setIsOpen(false)}>
+                        {siteConfig.cta.text}
+                      </Link>
+                    </Button>
+                  )}
                 </nav>
               </SheetContent>
             </Sheet>
@@ -88,13 +94,15 @@ export const Navbar = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex">
-            <Button asChild size="sm" className="px-6">
-              <Link to={siteConfig.cta.href}>
-                {siteConfig.cta.text}
-              </Link>
-            </Button>
-          </div>
+          {!hideCta && (
+            <div className="hidden md:flex">
+              <Button asChild size="sm" className="px-6">
+                <Link to={siteConfig.cta.href}>
+                  {siteConfig.cta.text}
+                </Link>
+              </Button>
+            </div>
+          )}
         </NavigationMenuList>
       </NavigationMenu>
     </header>

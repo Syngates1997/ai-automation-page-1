@@ -5,13 +5,18 @@ import { ArrowDown, Check } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="container min-h-[90vh] py-20 md:py-32">
+    <section className="container min-h-[90vh] py-16 md:py-24">
       {/* Headline + Subheadline - zentriert */}
       <div className="text-center space-y-4 max-w-4xl mx-auto mb-16">
+        {/* Eyebrow / Zielgruppe */}
+        <p className="text-sm md:text-base text-primary font-medium uppercase tracking-widest">
+          {siteConfig.eyebrow}
+        </p>
+
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-elegant">
           <span className="text-foreground">{siteConfig.title}</span>
           <br />
-          <span className="font-display italic text-primary">
+          <span className="font-display italic text-primary text-2xl md:text-3xl lg:text-4xl">
             {siteConfig.titleAccent}
           </span>
         </h1>

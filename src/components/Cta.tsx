@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 
 export const Cta = () => {
   return (
-    <section id="cta" className="py-24 sm:py-32">
+    <section id="cta" className="py-16 sm:py-20">
       <div className="container">
         {/* ROI Urgency - Section 12 */}
         <div className="max-w-3xl mx-auto text-center mb-16">

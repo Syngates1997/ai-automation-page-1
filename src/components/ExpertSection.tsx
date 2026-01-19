@@ -2,7 +2,7 @@ import { expertContent } from "@/config/content";
 
 export const ExpertSection = () => {
   return (
-    <section id="about" className="py-24 sm:py-32">
+    <section id="about" className="py-16 sm:py-20">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
           {/* Image */}

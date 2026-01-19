@@ -8,7 +8,7 @@ import { faqItems, siteConfig } from "@/config/content";
 
 export const FAQ = () => {
   return (
-    <section id="faq" className="container py-24 sm:py-32">
+    <section id="faq" className="container py-16 sm:py-20">
       {/* Section Header */}
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-elegant mb-4">

@@ -1,33 +1,33 @@
 /**
  * Landing Page Content Configuration
  * Brand: Flowstack Systems
- * Style: Dark theme with gold/amber accents
- * Content: German - B2B Process Architecture for Agencies
- * Framework: Conversion-optimized section sequence
+ * Style: Dark theme with gold accents
+ * Content: German - KI-Automatisierung für B2B-Dienstleister
+ * Framework: Conversion-optimized (Baulig/APEX style)
  */
 
 // ============================================
-// Section 1: Hero (Site Configuration)
-// Psychology: Attention capture + Positioning
+// Section 1: Hero
 // ============================================
 export const siteConfig = {
   name: "Flowstack Systems",
-  title: "Skalieren ohne Neueinstellungen.",
-  titleAccent: "Wachsen ohne Mehrarbeit.", // Displayed in italic serif font
+  eyebrow: "Für Agenturen, Berater & Dienstleister mit 500.000 € bis 5 Mio. € Umsatz",
+  title: "Steigere deine Umsatzrendite auf über 50 %",
+  titleAccent: "– ohne neue Mitarbeiter einzustellen oder deine Kosten mit zu skalieren.",
   tagline:
-    "Dein Fulfillment läuft manuell. Deshalb wächst dein Aufwand mit jedem neuen Kunden – statt deine Marge.",
-  // ABTF Bullet Points: Symptome & Frustrationen (keine Lösungen!)
+    "Wir automatisieren mit intelligenten KI-Mitarbeitern jeden manuellen Handgriff in deinem Unternehmen und verwandeln Umsatz in Gewinn.",
   bulletPoints: [
-    "Du bist in jedem Projekt der Engpass",
-    "Mehr Umsatz bedeutet mehr Stress, nicht mehr Gewinn",
-    "Dein Team fragt dich bei jeder Kleinigkeit",
-    "Urlaub? Theoretisch möglich. Praktisch ein Risiko.",
+    "50 %+ Umsatzrendite bei stabiler Kostenstruktur",
+    "Automatisierte Prozesse statt manueller Koordination",
+    "Skalierung ohne zusätzlichen Personalaufbau",
+    "Umsatzwachstum mit klarer Struktur und Kontrolle",
   ],
   cta: {
-    text: "Unverbindliche Analyse anfragen",
+    text: "Kostenlose Prozess-Analyse sichern",
     href: "/kostenlose-beratung",
     isInternal: true,
   },
+  ctaSubtext: "Unverbindlich & in 15 Minuten fertig",
   available: true,
 };
 
@@ -42,270 +42,164 @@ export const navLinks = [
 ];
 
 // ============================================
-// Section 2: Trust Strip
-// Psychology: Credibility anchor with specific numbers
+// Section 2: Trust Metrics & Tools
 // ============================================
 export const trustMetrics = {
-  headline: "Seit 8 Jahren. Für über 100 Unternehmen.",
+  headline: "Operativ erprobte Systeme. Keine Theorie.",
+  subheadline: "Diese Automatisierungen laufen bereits in produktiven Agenturen und Dienstleistungsunternehmen.",
+  rating: "4,9/5 Bewertung",
   metrics: [
-    { value: "100+", label: "Systeme implementiert" },
-    { value: "50.000+", label: "manuelle Stunden ersetzt" },
-    { value: "8+ Jahre", label: "Erfahrung in Prozessarchitektur" },
+    { value: "127+", label: "Unternehmen automatisiert" },
+    { value: "2,3 Mio. €", label: "reduzierte Personalkosten" },
+    { value: "847.000+", label: "manuelle Arbeitsstunden ersetzt" },
   ],
 };
 
-export const clientLogos = [
-  { name: "Company 1", logo: "https://via.placeholder.com/150x50?text=Logo+1" },
-  { name: "Company 2", logo: "https://via.placeholder.com/150x50?text=Logo+2" },
-  { name: "Company 3", logo: "https://via.placeholder.com/150x50?text=Logo+3" },
-  { name: "Company 4", logo: "https://via.placeholder.com/150x50?text=Logo+4" },
-  { name: "Company 5", logo: "https://via.placeholder.com/150x50?text=Logo+5" },
-  { name: "Company 6", logo: "https://via.placeholder.com/150x50?text=Logo+6" },
+export const tools = [
+  { name: "Make", logo: "https://cdn.simpleicons.org/make" },
+  { name: "Airtable", logo: "https://cdn.simpleicons.org/airtable" },
+  { name: "Notion", logo: "https://cdn.simpleicons.org/notion" },
+  { name: "Slack", logo: "https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" },
+  { name: "Zapier", logo: "https://cdn.simpleicons.org/zapier" },
+  { name: "HubSpot", logo: "https://cdn.simpleicons.org/hubspot" },
+  { name: "OpenAI", logo: "https://cdn.simpleicons.org/openai" },
+  { name: "n8n", logo: "https://cdn.simpleicons.org/n8n" },
 ];
 
 // ============================================
-// Section 3: Emotional Reframe
-// Psychology: Remove self-blame, create safety
+// Section 3: Problem Section (Umsatz-Stress-Dilemma)
 // ============================================
-export const emotionalReframe = {
-  headline: "Du hast alles richtig gemacht.",
-  subheadline: "Trotzdem funktioniert es nicht.",
-  content: `Du hast akquiriert. Geliefert. Ein Team aufgebaut. Umsatz gemacht.
-
-Aber irgendwann hast du gemerkt: Je mehr du wächst, desto mehr arbeitest du. Nicht weniger. Jeder neue Kunde bringt Umsatz – aber auch Aufwand. Die Marge? Bleibt gleich. Oder sinkt.
-
-Das Problem ist nicht dein Einsatz. Das Problem ist, dass dein Unternehmen auf dir basiert – statt auf Systemen.`,
-};
-
-// ============================================
-// Section 4: Problem Mirror
-// Psychology: Recognition ("Das bin ich!")
-// ============================================
-export const problemMirror = {
-  headline: "Die Symptome, die niemand ausspricht:",
+export const problemSection = {
+  headline: "Skalierung scheitert an Struktur.",
+  headlineAccent: "",
+  intro: "In B2B-Unternehmen und Agenturen entscheiden interne Abläufe über Wachstum, nicht externe Nachfrage.",
   problems: [
     {
-      title: "Zeitverlust",
-      description: "Du verbringst Stunden mit Koordination, Rückfragen, Nachfassen. Wertschöpfung? Später.",
-      icon: "UserX",
-    },
-    {
-      title: "Kontrollverlust",
-      description: "Du weißt nicht, wo Projekte stehen – bis jemand eskaliert.",
-      icon: "TrendingDown",
-    },
-    {
-      title: "Mitarbeiter-Abhängigkeit",
-      description: "Wenn dein bester Mann kündigt, bricht die Hälfte deines Fulfillments weg.",
-      icon: "AlertTriangle",
-    },
-    {
-      title: "Manuelle Prozesse",
-      description: "Jede Übergabe ist ein Risiko. Jede Aufgabe braucht Erklärung. Jedes Mal von vorn.",
-      icon: "Flame",
-    },
-    {
-      title: "Skalierungsproblem",
-      description: "Mehr Kunden = mehr Chaos. Nicht mehr Marge.",
-      icon: "Database",
-    },
-    {
-      title: "Operative Überlastung",
-      description: "Du arbeitest IM Unternehmen. Nie AM Unternehmen.",
-      icon: "RefreshCw",
-    },
-  ],
-};
-
-// ============================================
-// Section 4b: Target Audience
-// Psychology: Clear qualification / disqualification
-// ============================================
-export const targetAudience = {
-  headline: "Für wen das ist – und für wen nicht.",
-  forWhom: {
-    title: "Das ist für dich, wenn:",
-    items: [
-      "Du eine Agentur, Beratung oder B2B-Dienstleistung führst",
-      "Du zwischen 500K und 10M Umsatz machst",
-      "Du merkst, dass Wachstum Chaos bringt statt Freiheit",
-      "Du bereit bist, Prozesse zu ändern – nicht nur Tools zu kaufen",
-    ],
-  },
-  notForWhom: {
-    title: "Das ist nichts für dich, wenn:",
-    items: [
-      "Du gerade erst startest und noch keine funktionierenden Prozesse hast",
-      "Du nach einem Quick-Fix oder einer Wunderwaffe suchst",
-      "Du nicht bereit bist, in die Infrastruktur deines Unternehmens zu investieren",
-    ],
-  },
-};
-
-// ============================================
-// Section 5: Consequences
-// Psychology: Cost of inaction (loss aversion)
-// ============================================
-export const consequences = {
-  headline: "Ohne Veränderung passiert Folgendes:",
-  subheadline: "Mehr vom Gleichen führt zu mehr vom Gleichen.",
-  items: [
-    "Du arbeitest härter, aber der Gewinn bleibt gleich",
-    "Deine besten Leute kündigen – innerlich oder offiziell",
-    "Wettbewerber mit besseren Systemen ziehen an dir vorbei",
-    "Jede Neueinstellung macht das Chaos teurer, nicht besser",
-  ],
-  costPerDay: {
-    headline: "Was dich jeder Tag kostet:",
-    items: [
-      { metric: "2+ Stunden", description: "für Koordination statt Wertschöpfung" },
-      { metric: "500€+", description: "Marge, die durch Reibung verloren geht" },
-      { metric: "1 Tag", description: "näher am Burnout – deinem oder dem deines Teams" },
-    ],
-  },
-};
-
-// ============================================
-// Section 6: False Solutions
-// Psychology: Disqualify what they've already tried
-// ============================================
-export const falseSolutions = {
-  headline: "Das hast du wahrscheinlich schon versucht:",
-  subheadline: "Und es hat nicht funktioniert.",
-  solutions: [
-    {
-      title: "Mehr Leute einstellen",
-      problem: "Ergebnis: Höhere Kosten, gleiche Probleme. Koordination skaliert schneller als Output.",
-      icon: "Users",
-    },
-    {
-      title: "Noch ein Tool einführen",
-      problem: "Ergebnis: Tool Nr. 13 redet nicht mit Tool Nr. 12. Mehr Komplexität, nicht weniger.",
-      icon: "Puzzle",
-    },
-    {
-      title: "Einzelne Schritte automatisieren",
-      problem: "Ergebnis: Automation ohne Architektur macht Chaos schneller – nicht besser.",
-      icon: "Zap",
-    },
-  ],
-  conclusion: "Das Problem ist nicht die Ausführung. Das Problem ist die fehlende Struktur.",
-};
-
-// ============================================
-// Section 7: Core Differentiator
-// Psychology: Your unique insight/approach
-// ============================================
-export const differentiator = {
-  headline: "Warum bisherige Ansätze scheitern",
-  insight: {
-    left: {
-      title: "Der alte Weg",
-      description: "Manuell. Reaktiv. Personenabhängig. Jede Aufgabe braucht einen Menschen. Jede Entscheidung geht durch dich.",
-    },
-    right: {
-      title: "Der systemische Weg",
-      description: "Strukturiert. Planbar. Automatisiert. Das System weiß, was zu tun ist – auch wenn du nicht da bist.",
-    },
-  },
-  conclusion: `Du brauchst keine besseren Mitarbeiter. Du brauchst bessere Infrastruktur.
-
-Wir bauen die Prozessarchitektur, die dein Wachstum trägt – nicht limitiert.`,
-  keyInsight: "Systeme skalieren. Menschen nicht.",
-};
-
-// ============================================
-// Section 8: Outcomes
-// Psychology: Tangible results they'll achieve
-// ============================================
-export const outcomes = {
-  headline: "Was du bekommst:",
-  items: [
-    {
-      title: "Kapazität ohne Headcount",
-      description: "Mehr Kunden, gleiches Team. Dein Output skaliert, deine Kosten nicht.",
-      icon: "TrendingUp",
-    },
-    {
-      title: "Planbare Qualität",
-      description: "Das Ergebnis hängt vom Prozess ab – nicht von der Tagesform.",
-      icon: "CheckCircle",
-    },
-    {
-      title: "Höhere Marge",
-      description: "Weniger Reibung, weniger Nacharbeit, mehr Gewinn pro Projekt.",
-      icon: "PiggyBank",
-    },
-    {
-      title: "Deine Zeit zurück",
-      description: "Du arbeitest am Unternehmen – nicht mehr nur darin.",
       icon: "Clock",
+      title: "Operative Komplexität wächst schneller als Output",
+      description:
+        "Mit steigendem Umsatz nimmt der interne Abstimmungs- und Koordinationsaufwand zu. Diese Arbeit bindet Kapazität, ohne zusätzliche Leistung oder Marge zu erzeugen.",
+      symptoms: [],
+    },
+    {
+      icon: "TrendingDown",
+      title: "Personalkosten skalieren linear, Effizienz nicht",
+      description:
+        "Zusätzliche Mitarbeiter erhöhen Fixkosten sofort. Produktivität und Marge steigen dagegen nur verzögert oder bleiben konstant.",
+      symptoms: [],
+    },
+    {
+      icon: "Link",
+      title: "Interne Entscheidungswege begrenzen Geschwindigkeit",
+      description:
+        "Freigaben, Priorisierungen und Korrekturen laufen über wenige Stellen. Dadurch wird Skalierung nicht durch Nachfrage, sondern durch Struktur begrenzt.",
+      symptoms: [],
     },
   ],
 };
 
 // ============================================
-// Section 8b: Relief / What goes away
-// Psychology: "Du musst nicht mehr..." - very powerful
+// Section 4: Symptome / Pain Points
 // ============================================
-export const relief = {
-  headline: "Was wegfällt:",
+export const symptoms = {
+  headline: "Was wegfällt",
   items: [
-    "Du musst nicht mehr bei jeder Übergabe dabei sein",
-    "Du musst nicht mehr jeden Morgen Slack-Brände löschen",
-    "Du musst nicht mehr erklären, was 'eigentlich gemeint war'",
-    "Du musst nicht mehr hoffen, dass niemand kündigt",
-    "Du musst nicht mehr zwischen Akquise und Fulfillment wählen",
-    "Du musst nicht mehr Sonntags E-Mails vorbereiten",
+    "Manuelle Übergaben zwischen Abteilungen",
+    "Wiederkehrende Rückfragen zu identischen Themen",
+    "Individuelle Sonderlösungen für Standardprozesse",
+    "Abhängigkeit von einzelnen Schlüsselpersonen",
+    "Operatives Nacharbeiten durch unsaubere Abläufe",
+    "Wachstum mit steigender Unsicherheit in Steuerung und Marge",
+  ],
+  conclusion: "",
+};
+
+// ============================================
+// Section 5: Vorher/Nachher Vergleich
+// ============================================
+export const comparison = {
+  headline: "Der Unterschied liegt in der Arbeitsweise.",
+  headlineAccent: "",
+  before: {
+    title: "Der alte Weg",
+    items: [
+      "Operative Aufgaben werden manuell ausgeführt",
+      "Wissen und Verantwortung sind an einzelne Personen gebunden",
+      "Abläufe sind nicht standardisiert und schwer reproduzierbar",
+      "Wachstum erhöht Risiko, Kosten und Abhängigkeiten",
+    ],
+  },
+  after: {
+    title: "Mit Flowstack Systems",
+    items: [
+      "Prozesse laufen automatisiert",
+      "Entscheidungen und Zuständigkeiten sind klar definiert",
+      "Qualität bleibt konstant, auch bei höherem Volumen",
+      "Wachstum erhöht Marge und Stabilität",
+    ],
+  },
+  costComparison: {
+    headline: "Der strukturelle Unterschied",
+    employee: {
+      title: "Manuell",
+      cost: "Variable Kosten pro Einheit",
+      availability: "Begrenzte Kapazität",
+      training: "Einarbeitung erforderlich",
+      absence: "Personalabhängig",
+      scaling: "Linearer Kostenaufbau",
+    },
+    ai: {
+      title: "Automatisiert",
+      cost: "Fixkosten, skalierbar",
+      availability: "Unbegrenzte Kapazität",
+      training: "Sofort einsatzbereit",
+      absence: "Systembasiert",
+      scaling: "Marginale Zusatzkosten",
+    },
+    result: "Skalierung entsteht durch Systematisierung, nicht durch mehr Einsatz.",
+  },
+};
+
+// ============================================
+// Section 6: Benefits
+// ============================================
+export const benefits = {
+  headline: "Was sich messbar verändert",
+  subheadline: "",
+  items: [
+    {
+      icon: "TrendingUp",
+      title: "50 %+ Umsatzrendite",
+      description:
+        "Höhere Profitabilität durch automatisierte Abläufe bei stabiler Kostenstruktur.",
+      metric: "",
+    },
+    {
+      icon: "Users",
+      title: "Skalierung ohne proportionalen Personalaufbau",
+      description:
+        "Mehr Umsatz und Kapazität, ohne zusätzliche Vollzeitstellen oder steigenden Overhead.",
+      metric: "",
+    },
+    {
+      icon: "Shield",
+      title: "Stabile Abläufe bei steigendem Volumen",
+      description:
+        "Prozesse bleiben zuverlässig, auch wenn Anfragen, Projekte und Umsatz deutlich zunehmen.",
+      metric: "",
+    },
+    {
+      icon: "Target",
+      title: "Planbarkeit statt Reibungsverluste",
+      description:
+        "Klare Prozesse, saubere Übergaben und kontrollierbare Kosten, auch bei weiterem Wachstum.",
+      metric: "",
+    },
   ],
 };
 
 // ============================================
-// Section 9: Implementation Areas (Services)
-// Psychology: Scope clarity
-// ============================================
-export interface Service {
-  title: string;
-  description: string;
-  icon: string;
-}
-
-export const services: Service[] = [
-  {
-    title: "Vertrieb",
-    description: "Lead rein, Abschluss raus. Ohne manuelles Nachfassen.",
-    icon: "Target",
-  },
-  {
-    title: "Fulfillment",
-    description: "Projekte laufen nach Plan – auch wenn du nicht hinschaust.",
-    icon: "FolderKanban",
-  },
-  {
-    title: "Kundenkommunikation",
-    description: "Professionelle Touchpoints. Automatisch. Ohne Copy-Paste.",
-    icon: "MessageSquare",
-  },
-  {
-    title: "Interne Übergaben",
-    description: "Von Team A zu Team B – ohne Informationsverlust.",
-    icon: "ArrowLeftRight",
-  },
-  {
-    title: "Reporting",
-    description: "Zahlen auf Knopfdruck. Keine Excel-Akrobatik mehr.",
-    icon: "BarChart3",
-  },
-  {
-    title: "KI-Workflows",
-    description: "Wiederkehrende Entscheidungen trifft das System. Nicht du.",
-    icon: "Bot",
-  },
-];
-
-// ============================================
-// Section 10: Process (3-Step Methodology)
-// Psychology: Reduce uncertainty with simple steps
+// Section 7: Process Steps
 // ============================================
 export interface ProcessStep {
   step: string;
@@ -319,132 +213,299 @@ export interface ProcessStep {
 export const processSteps: ProcessStep[] = [
   {
     step: "01",
-    title: "Anfrage",
-    subtitle: "STARTEN",
+    subtitle: "ANALYSE",
+    title: "Analyse",
     description:
-      "Du buchst einen Termin. Wir schauen, ob es passt. Kein Pitch, keine Verpflichtung.",
-    duration: "2 MINUTEN",
+      "Identifikation der Prozesse, in denen heute überproportional Zeit und Kosten entstehen.",
+    duration: "60 MINUTEN",
     items: [
-      "Einfache Terminbuchung",
-      "Keine Vorbereitungszeit nötig",
-      "Erste Einschätzung, ob wir helfen können",
+      "Systematische Prozessaufnahme",
+      "Quantifizierung von Einsparpotenzial",
+      "Priorisierung nach Wirkung und Umsetzbarkeit",
     ],
   },
   {
     step: "02",
-    title: "Analyse",
-    subtitle: "VERSTEHEN",
+    subtitle: "IMPLEMENTIERUNG",
+    title: "Implementierung",
     description:
-      "Wir analysieren deine IST-Situation: Wo verlierst du Zeit? Wo bleibt Marge liegen? Wo sind die echten Engpässe?",
-    duration: "KOSTENLOS",
+      "Aufbau und Integration automatisierter Workflows und KI-Mitarbeiter in die bestehenden Systeme.",
+    duration: "2-6 WOCHEN",
     items: [
-      "IST-Analyse deiner kritischen Prozesse",
-      "Identifikation der größten Hebel",
-      "Klarer Report mit konkreten Zahlen",
+      "Technische Umsetzung der Workflows",
+      "Integration in bestehende Systemlandschaft",
+      "Dokumentation und Team-Einweisung",
     ],
   },
   {
     step: "03",
-    title: "Beratung",
-    subtitle: "PLANEN",
+    subtitle: "SKALIERUNG",
+    title: "Skalierung",
     description:
-      "Wir zeigen dir, wie die Lösung aussieht. Du entscheidest, ob du weitermachen willst.",
-    duration: "60 MINUTEN",
+      "Übertragung der Automatisierung auf weitere Bereiche und laufende Optimierung.",
+    duration: "LAUFEND",
     items: [
-      "Konkrete Roadmap für dein Unternehmen",
-      "Klare Investition und ROI-Rechnung",
-      "Entscheidung ohne Druck",
-    ],
-  },
-  {
-    step: "04",
-    title: "Umsetzung",
-    subtitle: "BAUEN",
-    description:
-      "Wir bauen deine Systeme, schulen dein Team und begleiten den Go-Live. Du gibst Feedback, wir machen die Arbeit.",
-    duration: "4-8 WOCHEN",
-    items: [
-      "Komplette Done-for-you Implementierung",
-      "Team-Schulung und Dokumentation",
-      "Laufende Optimierung nach Go-Live",
+      "Regelmäßige Performance-Analyse",
+      "Erweiterung auf weitere Prozesse",
+      "Kontinuierliche Verbesserung",
     ],
   },
 ];
 
 // ============================================
-// Section 11: Social Proof (Testimonials)
-// Psychology: Proof it works for people like them
+// Section 8: Services / Was wir automatisieren
 // ============================================
-export interface Testimonial {
-  companyLogo: string;
-  quote: string;
+export interface Service {
+  title: string;
   description: string;
-  author: {
-    name: string;
-    title: string;
-    image: string;
-  };
+  icon: string;
+  examples: string[];
 }
 
-export const testimonials: Testimonial[] = [
+export const services: Service[] = [
   {
-    companyLogo: "https://via.placeholder.com/150x45?text=Agentur+A",
-    quote: "3x Kapazität. Null Neueinstellungen.",
-    description:
-      "Vorher: Jeder neue Kunde bedeutete Überstunden. Jetzt läuft das Fulfillment systematisch durch – und ich habe wieder Zeit für Akquise.",
-    author: {
-      name: "Thomas M.",
-      title: "Geschäftsführer, Performance-Agentur",
-      image: "https://via.placeholder.com/60x60?text=TM",
-    },
+    title: "Vertrieb & Sales",
+    description: "Standardisierte Lead-Bearbeitung, Qualifizierung und Angebotsprozesse.",
+    icon: "Target",
+    examples: [
+      "Automatische Lead-Qualifizierung nach definierten Kriterien",
+      "Strukturierte Follow-up-Prozesse",
+      "Angebotserstellung aus standardisierten Vorlagen",
+      "Lückenlose CRM-Dokumentation",
+    ],
   },
   {
-    companyLogo: "https://via.placeholder.com/150x45?text=Beratung+B",
-    quote: "Drei gescheiterte Automatisierungen vorher. Diese hat funktioniert.",
-    description:
-      "Der Unterschied: Erst die Architektur, dann die Technik. Zum ersten Mal laufen unsere Prozesse wirklich – nicht nur auf dem Papier.",
-    author: {
-      name: "Sandra W.",
-      title: "COO, Beratungsunternehmen",
-      image: "https://via.placeholder.com/60x60?text=SW",
-    },
+    title: "Marketing & Content",
+    description: "Automatisierte Erstellung, Anpassung und Ausspielung von Inhalten.",
+    icon: "Megaphone",
+    examples: [
+      "Content-Produktion aus definierten Inputs",
+      "Mehrfachverwertung bestehender Inhalte",
+      "Kanalübergreifende Distribution",
+      "Systematisches Monitoring",
+    ],
   },
   {
-    companyLogo: "https://via.placeholder.com/150x45?text=Scale+Up+C",
-    quote: "Von 60 auf 40 Stunden. Bei 40% mehr Umsatz.",
-    description:
-      "Ich dachte, mehr Wachstum bedeutet automatisch mehr Stress. Falsch. Mit den richtigen Systemen bedeutet es mehr Kontrolle.",
-    author: {
-      name: "Markus S.",
-      title: "Gründer, B2B-Dienstleister",
-      image: "https://via.placeholder.com/60x60?text=MS",
-    },
+    title: "Fulfillment & Delivery",
+    description: "Reproduzierbare Leistungserbringung mit klar definierten Abläufen.",
+    icon: "Settings",
+    examples: [
+      "Standardisiertes Kunden-Onboarding",
+      "Automatische Task-Erstellung und Tracking",
+      "Transparente Projektstatusübersicht",
+      "Strukturierte Briefing-Prozesse",
+    ],
+  },
+  {
+    title: "Support & Service",
+    description: "Automatisierte Bearbeitung wiederkehrender Anfragen und Tickets.",
+    icon: "MessageCircle",
+    examples: [
+      "Automatische Kategorisierung und Priorisierung",
+      "Sofortige Beantwortung von Standardanfragen",
+      "Intelligente Eskalation komplexer Fälle",
+      "Proaktive Problemerkennung",
+    ],
+  },
+  {
+    title: "Controlling & Finanzen",
+    description: "Laufende Auswertungen und Kennzahlen ohne manuelle Datenerfassung.",
+    icon: "BarChart3",
+    examples: [
+      "Automatisch aktualisierte KPIs",
+      "Projektbezogene Profitabilitätsanalysen",
+      "Automatisierte Cashflow-Übersichten",
+      "Systematische Rechnungsstellung",
+    ],
+  },
+  {
+    title: "Backoffice & HR",
+    description: "Klare Prozesse statt individueller, personengebundener Arbeitsweisen.",
+    icon: "FolderOpen",
+    examples: [
+      "Strukturiertes Bewerbermanagement",
+      "Standardisiertes Mitarbeiter-Onboarding",
+      "Automatisierte Zeiterfassung",
+      "Systematisches Vertragsmanagement",
+    ],
   },
 ];
 
 // ============================================
-// Section 12: ROI / Decision Urgency
-// Psychology: Make the cost of waiting visible
+// Section 9: Anti-Positionierung (False Solutions)
 // ============================================
-export const roiSection = {
-  headline: "Jeder Tag ohne System kostet dich:",
-  items: [
-    { metric: "2+ Stunden", cost: "für Koordination statt Wertschöpfung" },
-    { metric: "500€+", cost: "Marge, die durch Reibung verloren geht" },
-    { metric: "1 Stück", cost: "Energie, die du nie zurückbekommst" },
+export const falseSolutions = {
+  headline: "Diese Lösungen hast du wahrscheinlich schon probiert.",
+  subheadline: "Sie funktionieren nicht.",
+  solutions: [
+    {
+      title: "Ich baue das selbst mit Zapier/Make",
+      icon: "Wrench",
+      problem:
+        "Jede Stunde mit Tutorials und Debugging ist eine Stunde weniger für Kunden und Strategie.",
+    },
+    {
+      title: "Ich stelle einfach mehr Leute ein",
+      icon: "Users",
+      problem:
+        "Mehr Mitarbeiter = mehr Kosten, mehr Meetings, mehr Chaos. Komplexität wächst exponentiell.",
+    },
+    {
+      title: "Wir kaufen noch ein Tool",
+      icon: "Package",
+      problem:
+        "Du hast 17 Tools, aber sie reden nicht miteinander. Das Problem ist die fehlende Verbindung.",
+    },
   ],
-  cta: {
-    headline: "In 90 Tagen stehst du hier:",
-    options: [
-      "Entweder: Gleiches Chaos, weniger Marge, mehr Stress",
-      "Oder: Systeme, die laufen – auch ohne dich",
-    ],
+  conclusion: "Das Problem ist nicht die Ausführung. Das Problem ist die fehlende Struktur.",
+  transition: {
+    headline: "Was wirklich funktioniert: Ein System, das denkt.",
+    text: "Du brauchst keine neuen Tools. Du brauchst keine neuen Mitarbeiter. Du brauchst Prozesse, die einmal gebaut werden und dann für immer laufen.",
   },
 };
 
 // ============================================
-// Section 13: FAQ
-// Psychology: Objection handling
+// Section 10: Case Studies
+// ============================================
+export interface CaseStudy {
+  category: string;
+  title: string;
+  challenge: string;
+  solution: string;
+  videoThumbnail: string;
+  results: string[];
+  metrics: {
+    value: string;
+    label: string;
+  }[];
+  author: {
+    name: string;
+    title: string;
+    company: string;
+    image: string;
+  };
+}
+
+export const caseStudiesSection = {
+  headline: "Ergebnisse aus vergleichbaren Unternehmen.",
+  headlineAccent: "",
+  subheadline: "",
+};
+
+export const caseStudies: CaseStudy[] = [
+  {
+    category: "Performance Marketing Agentur",
+    title: "Operative Entlastung und Margenverbesserung",
+    challenge:
+      "Ausgangssituation: 70% der Geschäftsführerzeit in operativen Aufgaben gebunden.",
+    solution:
+      "Automatisierter Bereich: Angebotserstellung, Kunden-Reports, Lead-Qualifizierung, Team-Briefings.",
+    videoThumbnail: "https://via.placeholder.com/640x360?text=Case+Study+Video",
+    results: [
+      "23 Stunden/Woche operative Entlastung",
+      "2 Vollzeitstellen durch Automatisierung ersetzt",
+      "Strategische Kapazität wiederhergestellt",
+    ],
+    metrics: [
+      { value: "73.887€", label: "Reduzierte Personalkosten p.a." },
+      { value: "47%", label: "Neue Umsatzrendite (vorher 21%)" },
+    ],
+    author: {
+      name: "Michael Brenner",
+      title: "Geschäftsführer",
+      company: "Performance Marketing Agentur",
+      image: "https://via.placeholder.com/80x80?text=MB",
+    },
+  },
+  {
+    category: "HR-Beratung",
+    title: "Skalierung ohne proportionalen Personalaufbau",
+    challenge:
+      "Ausgangssituation: Kunden-Onboarding band 3 Mitarbeiter für je 2 Wochen pro Kunde.",
+    solution:
+      "Automatisierter Bereich: Vollständiger Onboarding-Prozess von Vertragsabschluss bis Projektstart.",
+    videoThumbnail: "https://via.placeholder.com/640x360?text=Case+Study+Video",
+    results: [
+      "Onboarding-Zeit von 14 Tagen auf 48h reduziert",
+      "31 Stunden/Woche manuelle Arbeit eliminiert",
+      "40% mehr Kundenkapazität ohne Neueinstellungen",
+    ],
+    metrics: [
+      { value: "48h", label: "Neue Onboarding-Dauer" },
+      { value: "31h", label: "Wöchentlich eingesparte Arbeitszeit" },
+    ],
+    author: {
+      name: "Sandra Lehmann",
+      title: "Inhaberin",
+      company: "HR-Beratung",
+      image: "https://via.placeholder.com/80x80?text=SL",
+    },
+  },
+  {
+    category: "Steuerberatung für E-Commerce",
+    title: "Support-Automatisierung mit Kostenreduktion",
+    challenge:
+      "Ausgangssituation: 4 Support-Mitarbeiter, Antwortzeiten über 24 Stunden.",
+    solution:
+      "Automatisierter Bereich: Anfragekategorisierung, Standard-Antworten, intelligente Eskalation.",
+    videoThumbnail: "https://via.placeholder.com/640x360?text=Case+Study+Video",
+    results: [
+      "78% der Anfragen automatisch bearbeitet",
+      "Antwortzeit auf 3 Minuten reduziert",
+      "Support-Team von 4 auf 1,5 Stellen",
+    ],
+    metrics: [
+      { value: "62.340€", label: "Reduzierte Personalkosten p.a." },
+      { value: "3 Min", label: "Durchschnittliche Antwortzeit" },
+    ],
+    author: {
+      name: "Thomas Richter",
+      title: "Gründer",
+      company: "Steuerberatung für E-Commerce",
+      image: "https://via.placeholder.com/80x80?text=TR",
+    },
+  },
+];
+
+// Legacy export for backward compatibility
+export const testimonials = caseStudies.map((cs) => ({
+  quote: cs.title,
+  description: cs.challenge,
+  results: cs.results,
+  author: cs.author,
+}));
+
+// ============================================
+// Section 11: Team / Über uns
+// ============================================
+export const teamContent = {
+  headline: "Fokus auf operative Umsetzung.",
+  headlineAccent: "",
+  description: `Wir entwickeln und implementieren Systeme, die im laufenden Betrieb zuverlässig funktionieren, nicht nur in Konzeptpapieren.`,
+  stats: [
+    { value: "127+", label: "Unternehmen automatisiert" },
+    { value: "2,3 Mio. €", label: "reduzierte Personalkosten" },
+    { value: "847.000+", label: "ersetzte Arbeitsstunden" },
+    { value: "100%", label: "DSGVO-konform" },
+  ],
+  members: [
+    {
+      name: "Claudio Di Franco",
+      role: "Gründer & Prozessarchitekt",
+      image: "https://via.placeholder.com/400x400?text=Claudio",
+      description: "Prozessarchitektur und Systemdesign für B2B-Dienstleister.",
+    },
+    {
+      name: "Anak",
+      role: "Automation Engineer",
+      image: "https://via.placeholder.com/400x400?text=Anak",
+      description: "Technische Implementierung, KI-Integration und Workflow-Automatisierung.",
+    },
+  ],
+};
+
+// ============================================
+// Section 12: FAQ
 // ============================================
 export interface FAQItem {
   question: string;
@@ -453,56 +514,100 @@ export interface FAQItem {
 
 export const faqItems: FAQItem[] = [
   {
-    question: "Ist das für mich geeignet?",
+    question: "Für welche Unternehmen eignet sich das?",
     answer:
-      "Wenn du eine Agentur, Beratung oder B2B-Dienstleistung führst, zwischen 500K und 10M Umsatz machst und merkst, dass mehr Wachstum mehr Chaos bedeutet – ja. Wenn du gerade erst startest oder keine operativen Engpässe hast – nein.",
+      "Diese Lösung eignet sich für Unternehmen mit etablierten Angeboten und wiederkehrenden Prozessen, insbesondere für Agenturen, Beratungen und B2B-Dienstleister mit einem Jahresumsatz zwischen 500.000 € und 5 Mio. €. Voraussetzung sind bestehende, standardisierbare Abläufe.",
   },
   {
-    question: "Was macht euch anders als andere Automatisierungsanbieter?",
+    question: "Wie hoch ist die Investition?",
     answer:
-      "Die meisten automatisieren bestehende Prozesse. Problem: Wenn der Prozess kaputt ist, wird er nur schneller kaputt. Wir bauen zuerst die Architektur – die Struktur, die definiert, wer was wann wie macht. Dann automatisieren wir.",
+      "Die Investition richtet sich nach dem Umfang der Automatisierung und wird individuell kalkuliert. Eine konkrete Einschätzung erfolgt im Erstgespräch.",
   },
   {
-    question: "Wie schnell sehe ich Ergebnisse?",
+    question: "Wann sind erste Ergebnisse sichtbar?",
     answer:
-      "Die Analyse dauert 1-2 Stunden. Die Architektur 1-2 Wochen. Die Umsetzung 4-8 Wochen. Erste spürbare Entlastung erlebst du oft schon nach 2-3 Wochen.",
+      "Die ersten Automatisierungen gehen typischerweise nach 2 bis 4 Wochen in Betrieb. Messbare Auswirkungen auf Zeit- und Kostenstruktur zeigen sich in der Regel innerhalb von 60 bis 90 Tagen.",
   },
   {
-    question: "Was kostet das?",
+    question: "Ist technisches Wissen erforderlich?",
     answer:
-      "Die Analyse ist kostenlos. Danach hast du einen klaren Report mit ROI-Rechnung. Projekte liegen typischerweise zwischen 10K und 50K – amortisieren sich aber meist in 2-3 Monaten durch eingesparte Koordinationszeit und höhere Margen.",
+      "Nein. Die Implementierung erfolgt vollständig durch unser Team. Deine Aufgabe ist es, bestehende Prozesse zu beschreiben und Feedback zur Umsetzung zu geben.",
   },
   {
-    question: "Was, wenn es bei mir nicht funktioniert?",
+    question: "Welche Technologien werden eingesetzt?",
     answer:
-      "100+ Projekte. Kein einziges gescheitert. Aber: Wenn wir in der Analyse sehen, dass Prozessarchitektur nicht dein Problem löst, sagen wir dir das. Wir arbeiten nur mit Unternehmen, bei denen wir sicher sind, Ergebnisse zu liefern.",
+      "Wir arbeiten mit etablierten KI- und Automatisierungsplattformen wie OpenAI, Claude, Make.com und n8n. Die Integration erfolgt in deine bestehende Systemlandschaft, ohne dass du Tools wechseln musst.",
   },
   {
-    question: "Wie viel meiner Zeit kostet das?",
+    question: "Wie ist der Ablauf einer Zusammenarbeit?",
     answer:
-      "Analyse: 1-2 Stunden. Architektur-Phase: 2-3 Stunden pro Woche für Abstimmungen. Umsetzung: Minimal. Wir machen die Arbeit. Insgesamt weniger Zeit als du aktuell mit Feuerlöschen verbringst.",
+      "Nach einem Erstgespräch zur Analyse folgt ein konkreter Umsetzungsplan mit Priorisierung. Die Implementierung dauert je nach Umfang 2 bis 6 Wochen, gefolgt von einer optionalen laufenden Optimierungsphase.",
+  },
+  {
+    question: "Welche Zusicherungen gibt es?",
+    answer:
+      "Wir arbeiten ergebnisorientiert und definieren vor Projektstart klare, messbare Ziele. Eine pauschale Erfolgsgarantie geben wir nicht, da Ergebnisse auch von internen Faktoren abhängen.",
+  },
+  {
+    question: "Was unterscheidet euch von anderen Anbietern?",
+    answer:
+      "Wir implementieren selbst, statt nur zu beraten. Der Fokus liegt auf messbaren Ergebnissen in operativen Prozessen, nicht auf Konzepten oder Schulungen.",
+  },
+  {
+    question: "Wie wird mit Daten umgegangen?",
+    answer:
+      "Alle Daten bleiben in deinen Systemen. Die eingesetzten KI-Modelle sind DSGVO-konform und nutzen keine Kundendaten für Trainingszwecke. Auf Wunsch sind auch selbst gehostete Lösungen möglich.",
+  },
+  {
+    question: "Führt Automatisierung zu Personalabbau?",
+    answer:
+      "Nicht zwangsläufig. Die meisten Unternehmen nutzen frei werdende Kapazitäten für wertschöpfende Aufgaben oder wachsen ohne zusätzliche Einstellungen. Personalreduktion ist kein primäres Ziel der Zusammenarbeit.",
   },
 ];
 
 // ============================================
-// Section 14: Final CTA
-// Psychology: Clear, single action to close
+// Section 13: Final CTA
 // ============================================
 export const finalCta = {
-  headline: "Bereit für den nächsten Schritt?",
-  subheadline: "Kostenlose IST-Analyse",
+  headline: "Reduziere manuelle Arbeit. Erhöhe deine Marge.",
+  subheadline:
+    "Automatisiere deine internen Prozesse mit KI und skaliere dein Unternehmen ohne zusätzlichen Overhead.",
   description:
-    "Wir schauen uns an, wo du Zeit und Marge verlierst. Du bekommst einen klaren Report – auch wenn wir nicht zusammenarbeiten.",
+    "",
   cta: {
-    text: "Jetzt Erstgespräch anfragen",
+    text: "System prüfen lassen",
     href: "/kostenlose-beratung",
     isInternal: true,
   },
-  trust: "30 Minuten. Kein Pitch. Keine Verpflichtung. Nur Klarheit.",
+  ctaSubtext: "Unverbindliches Erstgespräch.",
+  benefits: [
+    "Automatisierte Prozesse statt manueller Koordination",
+    "Skalierung ohne zusätzlichen Personalaufbau",
+    "Klare Strukturen für stabile Margen",
+  ],
   riskReversals: [
     "Kostenlos und unverbindlich",
-    "Kein Verkaufsdruck",
-    "Du bekommst echten Mehrwert – egal ob du buchst",
+    "Sachliche Analyse",
+    "Ergebnis unabhängig von Zusammenarbeit",
+  ],
+  details: {
+    duration: "60 Minuten",
+    cost: "0€",
+    pressure: "Kein Verkaufsdruck",
+  },
+  trust: "127+ Unternehmen im DACH-Raum",
+};
+
+// ============================================
+// Section 14: ROI Urgency
+// ============================================
+export const roiSection = {
+  headline: "Skalierung ist eine strukturelle Entscheidung.",
+  subheadline: "Die Frage ist nicht, ob du mehr Umsatz machen kannst, sondern ob dein System darauf ausgelegt ist, diesen Umsatz profitabel und stabil abzubilden.",
+  items: [
+    { metric: "Koordination statt Wertschöpfung", cost: "Zeit und Fokus fließen in Abstimmung, nicht in Wachstum." },
+    { metric: "500 €+", cost: "Marge, die täglich durch operative Reibung verloren geht." },
+    { metric: "1 Einheit", cost: "Unternehmerische Energie, die nicht zurückkommt." },
   ],
 };
 
@@ -512,53 +617,119 @@ export const finalCta = {
 export const footerLinks = {
   social: [
     { label: "LinkedIn", href: "https://linkedin.com", icon: "Linkedin" },
-    { label: "Twitter", href: "https://twitter.com", icon: "Twitter" },
-    { label: "YouTube", href: "https://youtube.com", icon: "Youtube" },
   ],
   legal: [
     { label: "Datenschutz", href: "/datenschutz" },
-    { label: "AGB", href: "/agb" },
     { label: "Impressum", href: "/impressum" },
   ],
 };
 
 // ============================================
-// About Section (kept for compatibility)
+// Meta / SEO
 // ============================================
+export const metaContent = {
+  title: "KI-Automatisierung für Agenturen | Skalieren ohne neue Mitarbeiter | Flowstack Systems",
+  description:
+    "Spare 25+ Stunden pro Woche und bis zu 73.887€ Personalkosten im Monat. KI-Mitarbeiter für Agenturen, Berater und Dienstleister. ✓ Done-for-You ✓ In 14 Tagen live ✓ DSGVO-konform",
+};
+
+// ============================================
+// Legacy exports for backward compatibility
+// ============================================
+export const emotionalReframe = {
+  headline: problemSection.headline,
+  subheadline: problemSection.headlineAccent,
+  content: problemSection.intro,
+};
+
+export const problemMirror = {
+  headline: problemSection.headline,
+  subheadline: problemSection.intro,
+  problems: problemSection.problems.map((p) => ({
+    title: p.title,
+    description: p.description,
+    icon: p.icon,
+  })),
+};
+
+export const targetAudience = {
+  headline: "Entwickelt für Unternehmen, die strukturell skalieren wollen.",
+  forWhom: {
+    title: "Das ist für dich, wenn:",
+    items: [
+      "dein Umsatz zwischen 500.000 € und 5 Mio. € liegt",
+      "operative Abläufe zunehmend komplex werden",
+      "Personalkosten ein zentraler Hebel für Profitabilität sind",
+      "du Skalierung als Systemfrage verstehst, nicht als reines Umsatzthema",
+    ],
+  },
+  notForWhom: {
+    title: "Das ist nichts für dich, wenn:",
+    items: [
+      "Prozesse noch nicht standardisiert sind",
+      "du kurzfristige Einzellösungen oder Hacks suchst",
+      "du operative Verantwortung nicht neu verteilen willst",
+    ],
+  },
+};
+
+export const differentiator = {
+  headline: comparison.headline,
+  insight: {
+    left: {
+      title: comparison.before.title,
+      description: comparison.before.items.join(" "),
+    },
+    right: {
+      title: comparison.after.title,
+      description: comparison.after.items.join(" "),
+    },
+  },
+  conclusion: comparison.costComparison.result,
+  keyInsight: "Skalierung entsteht durch Systematisierung, nicht durch mehr Einsatz.",
+};
+
+export const outcomes = {
+  headline: benefits.headline,
+  items: benefits.items.map((b) => ({
+    title: b.title,
+    description: b.description,
+    icon: b.icon,
+  })),
+};
+
+export const relief = {
+  headline: "Was wegfällt",
+  items: symptoms.items.slice(0, 6),
+};
+
+export const consequences = {
+  headline: roiSection.headline,
+  subheadline: roiSection.subheadline,
+  items: roiSection.items.map((i) => i.cost),
+  costPerDay: {
+    headline: "",
+    items: roiSection.items.map((i) => ({
+      metric: i.metric,
+      description: i.cost,
+    })),
+  },
+};
+
 export const aboutContent = {
   title: "Über",
-  description: `Wir bauen Systeme, die manuelle Prozesse ersetzen. Keine Berater, die Slides liefern. Keine Tool-Verkäufer mit einer Lösung für alles.
-
-Sondern Architekten, die verstehen, wie Agenturen und B2B-Dienstleister wirklich operieren – und was sie brauchen, um ohne mehr Headcount zu skalieren.`,
-  stats: [
-    { value: "100+", label: "Systeme gebaut" },
-    { value: "50.000+", label: "Stunden eliminiert" },
-    { value: "3x", label: "mehr Kapazität" },
-    { value: "8+", label: "Jahre Erfahrung" },
-  ],
+  description: teamContent.description,
+  stats: teamContent.stats,
 };
 
-// ============================================
-// Expert Section
-// ============================================
 export const expertContent = {
   label: "Wer hinter Flowstack Systems steht",
-  headline: "Claudio Di Franco",
-  name: "Claudio Di Franco",
-  experience: "7+ Jahre Erfahrung",
-  image: "https://via.placeholder.com/500x500?text=Claudio+Di+Franco",
-  paragraphs: [
-    "Ich habe selbst in einer Agentur gearbeitet – und weiß, wie es sich anfühlt, wenn jeder neue Kunde mehr Chaos statt mehr Freiheit bringt.",
-    "Nach Jahren in der Agentur-Welt habe ich mich auf das spezialisiert, was die meisten übersehen: die Infrastruktur. Die Systeme. Die Prozesse, die im Hintergrund laufen – oder eben nicht.",
-    "Flowstack Systems ist das Ergebnis dieser Erfahrung. Wir bauen keine Websites. Wir bauen keine Ads. Wir bauen das, was zwischen Leadeingang und Fulfillment-Ende passiert – automatisiert, strukturiert und skalierbar.",
-  ],
-  credentials: [
-    { value: "100+", label: "Systeme implementiert" },
-    { value: "7+", label: "Jahre Erfahrung" },
-    { value: "B2B", label: "Fokus auf Agenturen" },
-    { value: "KI", label: "Automations-Spezialist" },
-  ],
+  headline: teamContent.members[0].name,
+  name: teamContent.members[0].name,
+  experience: "Ex-Agenturinhaber",
+  image: teamContent.members[0].image,
+  paragraphs: teamContent.description.split("\n\n"),
+  credentials: teamContent.stats,
 };
 
-// Legacy exports for backward compatibility
-export const caseStudies = [];
+export const clientLogos = tools;

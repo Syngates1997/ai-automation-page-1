@@ -12,7 +12,7 @@ const DankePage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Navbar hideCta />
 
       <main className="container flex items-center justify-center min-h-[80vh] px-6 py-20">
         <div className="max-w-2xl mx-auto text-center">
@@ -78,7 +78,7 @@ const DankePage = () => {
         </div>
       </main>
 
-      <Footer />
+      <Footer hideCta />
     </div>
   );
 };

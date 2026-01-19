@@ -39,7 +39,7 @@ const FormularPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Navbar hideCta />
 
       <main className="container max-w-4xl mx-auto px-6 py-20 md:py-32">
         <div className="text-center mb-12">
@@ -144,7 +144,7 @@ const FormularPage = () => {
             </span>
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 bg-primary rounded-full" />
-              Kein Verkaufsdruck
+              Unverbindlich & kostenlos
             </span>
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 bg-primary rounded-full" />
@@ -154,7 +154,7 @@ const FormularPage = () => {
         </div>
       </main>
 
-      <Footer />
+      <Footer hideCta />
     </div>
   );
 };

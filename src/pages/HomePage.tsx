@@ -10,7 +10,7 @@ import { Outcomes } from "@/components/Outcomes";
 import { Relief } from "@/components/Relief";
 import { Testimonials } from "@/components/Testimonials";
 import { Timeline } from "@/components/Timeline";
-import { ExpertSection } from "@/components/ExpertSection";
+import { TeamSection } from "@/components/TeamSection";
 import { Cta } from "@/components/Cta";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
@@ -51,8 +51,8 @@ export const HomePage = () => {
       {/* 8. ABLAUF DER ZUSAMMENARBEIT */}
       <Timeline />
 
-      {/* 9. EXPERTENVORSTELLUNG */}
-      <ExpertSection />
+      {/* 9. TEAM-SEKTION */}
+      <TeamSection />
 
       {/* 10. CTA-SECTION */}
       <Cta />
