@@ -1,52 +1,59 @@
-import { clientLogos, trustMetrics } from "@/config/content";
+import { trustMetrics } from "@/config/content";
+
+const tools = [
+  { name: "n8n", icon: "⚡" },
+  { name: "Make", icon: "🔄" },
+  { name: "Zapier", icon: "⚡" },
+  { name: "Claude AI", icon: "🤖" },
+  { name: "OpenAI", icon: "🧠" },
+  { name: "Slack", icon: "💬" },
+  { name: "HubSpot", icon: "🎯" },
+  { name: "Notion", icon: "📝" },
+  { name: "Airtable", icon: "📊" },
+  { name: "Google Sheets", icon: "📗" },
+  { name: "Webflow", icon: "🌐" },
+  { name: "Vercel", icon: "▲" },
+  { name: "Stripe", icon: "💳" },
+  { name: "Cal.com", icon: "📅" },
+];
 
 export const Sponsors = () => {
-  // Duplicate logos for seamless infinite scroll
-  const allLogos = [...clientLogos, ...clientLogos];
-
   return (
-    <section id="sponsors" className="py-16 overflow-hidden">
-      {/* Trust Metrics - Section 2 */}
-      <div className="container mb-12">
+    <section id="sponsors" className="py-12 md:py-16">
+      {/* Trust Metrics */}
+      <div className="container mb-10">
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
           {trustMetrics.metrics.map((metric, index) => (
             <div key={index} className="text-center">
               <p className="text-3xl md:text-4xl font-light text-primary mb-1">
                 {metric.value}
               </p>
-              <p className="text-sm text-muted-foreground">
-                {metric.label}
-              </p>
+              <p className="text-sm text-muted-foreground">{metric.label}</p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Logo strip */}
+      {/* Tools Label */}
       <div className="container">
-        <p className="text-center text-xs uppercase tracking-widest text-muted-foreground mb-8">
-          Vertraut von führenden Unternehmen
+        <p className="text-center text-xs uppercase tracking-widest text-muted-foreground mb-6">
+          Tools & Integrationen, die wir nutzen
         </p>
       </div>
 
-      {/* Marquee container */}
-      <div className="relative">
-        {/* Gradient overlays */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
-
-        {/* Scrolling logos */}
-        <div className="flex animate-marquee">
-          {allLogos.map((logo, index) => (
+      {/* Animated Tools Slider */}
+      <div className="w-full overflow-hidden bg-black/50 py-5 border-y border-white/10">
+        <div className="flex animate-marquee hover:[animation-play-state:paused]">
+          {/* Duplicate for seamless animation */}
+          {[...tools, ...tools].map((tool, index) => (
             <div
-              key={`${logo.name}-${index}`}
-              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              key={index}
+              className="flex-shrink-0 mx-6 md:mx-8 flex items-center gap-2"
             >
-              <img
-                src={logo.logo}
-                alt={logo.name}
-                className="h-8 md:h-10 w-auto object-contain opacity-50 hover:opacity-80 transition-opacity grayscale"
-              />
+              <span className="text-lg">{tool.icon}</span>
+              <span className="text-white/70 text-sm font-medium whitespace-nowrap hover:text-primary transition-colors">
+                {tool.name}
+              </span>
             </div>
           ))}
         </div>

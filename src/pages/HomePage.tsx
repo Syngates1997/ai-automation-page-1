@@ -10,7 +10,7 @@ import { Outcomes } from "@/components/Outcomes";
 import { Relief } from "@/components/Relief";
 import { Testimonials } from "@/components/Testimonials";
 import { Timeline } from "@/components/Timeline";
-import { ExpertSection } from "@/components/ExpertSection";
+import { TeamSection } from "@/components/TeamSection";
 import { Cta } from "@/components/Cta";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
@@ -22,45 +22,47 @@ export const HomePage = () => {
     <>
       <Navbar />
 
-      {/* 1. HERO (Above the Fold) */}
+      {/* 1. HERO (Above the Fold) - DARK */}
       <Hero />
 
-      {/* Trust Metrics Strip */}
+      {/* Trust Metrics + Tools Strip - DARK */}
       <Sponsors />
 
-      {/* 2. PROBLEME DER ZIELGRUPPE */}
+      {/* 2. PROBLEME DER ZIELGRUPPE - DARK */}
       <EmotionalReframe />
+
+      {/* 3. DIE SYMPTOME - LIGHT */}
       <ProblemMirror />
 
-      {/* 3. FÜR WEN IST DAS? (Zielgruppe) */}
+      {/* 4. FÜR WEN IST DAS? - DARK */}
       <TargetAudience />
 
-      {/* 4. DIE FLOWSTACK-METHODE */}
+      {/* 5. DIE FLOWSTACK-METHODE - LIGHT */}
       <Differentiator />
 
-      {/* 5. LEISTUNGSBAUSTEINE */}
+      {/* 6. LEISTUNGSBAUSTEINE - DARK */}
       <Services />
 
-      {/* 6. VORTEILE / OUTCOMES */}
+      {/* 7. VORTEILE / OUTCOMES - DARK */}
       <Outcomes />
       <Relief />
 
-      {/* 7. FALLSTUDIEN (Testimonials) */}
+      {/* 8. FALLSTUDIEN - LIGHT */}
       <Testimonials />
 
-      {/* 8. ABLAUF DER ZUSAMMENARBEIT */}
+      {/* 9. ABLAUF DER ZUSAMMENARBEIT - DARK */}
       <Timeline />
 
-      {/* 9. EXPERTENVORSTELLUNG */}
-      <ExpertSection />
+      {/* 10. TEAM - DARK (gray-900) */}
+      <TeamSection />
 
-      {/* 10. CTA-SECTION */}
-      <Cta />
-
-      {/* 11. FAQ */}
+      {/* 11. FAQ - LIGHT */}
       <FAQ />
 
-      {/* 12. FOOTER */}
+      {/* 12. CTA-SECTION - DARK */}
+      <Cta />
+
+      {/* FOOTER */}
       <Footer />
 
       <ScrollToTop />
