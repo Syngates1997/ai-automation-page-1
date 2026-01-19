@@ -1,8 +1,9 @@
 /**
  * Landing Page Content Configuration
- * Style: jousefmurad.com (elegant dark theme with gold accents)
+ * Brand: Flowstack Systems
+ * Style: Dark theme with gold/amber accents
  * Content: German - B2B Process Architecture for Agencies
- * Framework: 14-section psychological conversion sequence
+ * Framework: Conversion-optimized section sequence
  */
 
 // ============================================
@@ -10,7 +11,7 @@
 // Psychology: Attention capture + Positioning
 // ============================================
 export const siteConfig = {
-  name: "Jousef Murad",
+  name: "Flowstack Systems",
   title: "Skalieren ohne Neueinstellungen.",
   titleAccent: "Wachsen ohne Mehrarbeit.", // Displayed in italic serif font
   tagline:
@@ -24,7 +25,8 @@ export const siteConfig = {
   ],
   cta: {
     text: "Unverbindliche Analyse anfragen",
-    href: "https://calendly.com/your-link/30min",
+    href: "/kostenlose-beratung",
+    isInternal: true,
   },
   available: true,
 };
@@ -492,8 +494,9 @@ export const finalCta = {
   description:
     "Wir schauen uns an, wo du Zeit und Marge verlierst. Du bekommst einen klaren Report – auch wenn wir nicht zusammenarbeiten.",
   cta: {
-    text: "Jetzt Termin buchen",
-    href: "https://calendly.com/your-link/30min",
+    text: "Jetzt Erstgespräch anfragen",
+    href: "/kostenlose-beratung",
+    isInternal: true,
   },
   trust: "30 Minuten. Kein Pitch. Keine Verpflichtung. Nur Klarheit.",
   riskReversals: [
@@ -532,6 +535,28 @@ Sondern Architekten, die verstehen, wie Agenturen und B2B-Dienstleister wirklich
     { value: "50.000+", label: "Stunden eliminiert" },
     { value: "3x", label: "mehr Kapazität" },
     { value: "8+", label: "Jahre Erfahrung" },
+  ],
+};
+
+// ============================================
+// Expert Section
+// ============================================
+export const expertContent = {
+  label: "Wer hinter Flowstack Systems steht",
+  headline: "Claudio Di Franco",
+  name: "Claudio Di Franco",
+  experience: "7+ Jahre Erfahrung",
+  image: "https://via.placeholder.com/500x500?text=Claudio+Di+Franco",
+  paragraphs: [
+    "Ich habe selbst in einer Agentur gearbeitet – und weiß, wie es sich anfühlt, wenn jeder neue Kunde mehr Chaos statt mehr Freiheit bringt.",
+    "Nach Jahren in der Agentur-Welt habe ich mich auf das spezialisiert, was die meisten übersehen: die Infrastruktur. Die Systeme. Die Prozesse, die im Hintergrund laufen – oder eben nicht.",
+    "Flowstack Systems ist das Ergebnis dieser Erfahrung. Wir bauen keine Websites. Wir bauen keine Ads. Wir bauen das, was zwischen Leadeingang und Fulfillment-Ende passiert – automatisiert, strukturiert und skalierbar.",
+  ],
+  credentials: [
+    { value: "100+", label: "Systeme implementiert" },
+    { value: "7+", label: "Jahre Erfahrung" },
+    { value: "B2B", label: "Fokus auf Agenturen" },
+    { value: "KI", label: "Automations-Spezialist" },
   ],
 };
 

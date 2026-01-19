@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -25,13 +26,12 @@ export const Navbar = () => {
         <NavigationMenuList className="container h-16 px-4 w-screen flex justify-between items-center">
           {/* Logo - Signature Style */}
           <NavigationMenuItem className="font-bold flex">
-            <a
-              rel="noreferrer noopener"
-              href="/"
+            <Link
+              to="/"
               className="font-display italic text-xl text-primary hover:text-primary/80 transition-colors"
             >
               {siteConfig.name}
-            </a>
+            </Link>
           </NavigationMenuItem>
 
           {/* Mobile Menu */}
@@ -62,13 +62,9 @@ export const Navbar = () => {
                     </a>
                   ))}
                   <Button asChild className="mt-4 w-full">
-                    <a
-                      href={siteConfig.cta.href}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <Link to={siteConfig.cta.href} onClick={() => setIsOpen(false)}>
                       {siteConfig.cta.text}
-                    </a>
+                    </Link>
                   </Button>
                 </nav>
               </SheetContent>
@@ -94,13 +90,9 @@ export const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:flex">
             <Button asChild size="sm" className="px-6">
-              <a
-                href={siteConfig.cta.href}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Link to={siteConfig.cta.href}>
                 {siteConfig.cta.text}
-              </a>
+              </Link>
             </Button>
           </div>
         </NavigationMenuList>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { finalCta, roiSection } from "@/config/content";
 import { ArrowRight, CheckCircle } from "lucide-react";
@@ -60,10 +61,10 @@ export const Cta = () => {
               size="lg"
               className="group px-8 py-6 text-base font-medium tracking-wide"
             >
-              <a href={finalCta.cta.href}>
+              <Link to={finalCta.cta.href}>
                 {finalCta.cta.text}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
+              </Link>
             </Button>
 
             <p className="text-sm text-muted-foreground mt-6">

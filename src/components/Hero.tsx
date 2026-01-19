@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { siteConfig } from "@/config/content";
 import { ArrowDown, Check } from "lucide-react";
@@ -63,9 +64,9 @@ export const Hero = () => {
               size="lg"
               className="px-8 py-6 text-base font-medium tracking-wide w-full md:w-auto"
             >
-              <a href={siteConfig.cta.href} target="_blank" rel="noreferrer">
+              <Link to={siteConfig.cta.href}>
                 {siteConfig.cta.text}
-              </a>
+              </Link>
             </Button>
             <p className="text-sm text-muted-foreground mt-3">
               Kein Verkaufsgespräch. Nur Klarheit.
