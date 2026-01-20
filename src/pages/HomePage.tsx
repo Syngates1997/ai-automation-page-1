@@ -7,7 +7,6 @@ import { TargetAudience } from "@/components/TargetAudience";
 import { Differentiator } from "@/components/Differentiator";
 import { Services } from "@/components/Services";
 import { Outcomes } from "@/components/Outcomes";
-import { Relief } from "@/components/Relief";
 import { Testimonials } from "@/components/Testimonials";
 import { Timeline } from "@/components/Timeline";
 import { TeamSection } from "@/components/TeamSection";
@@ -43,7 +42,6 @@ export const HomePage = () => {
 
       {/* 6. VORTEILE / OUTCOMES */}
       <Outcomes />
-      <Relief />
 
       {/* 7. FALLSTUDIEN (Testimonials) */}
       <Testimonials />
