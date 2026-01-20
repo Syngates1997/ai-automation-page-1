@@ -10,6 +10,7 @@ import DankePage from "./pages/DankePage";
 import ImpressumPage from "./pages/ImpressumPage";
 import DatenschutzPage from "./pages/DatenschutzPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import CookieBanner from "./components/CookieBanner";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/datenschutz" element={<DatenschutzPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <CookieBanner />
     </Router>
   );
 }

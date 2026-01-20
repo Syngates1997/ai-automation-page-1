@@ -575,7 +575,7 @@ export const finalCta = {
   description:
     "",
   cta: {
-    text: "System prüfen lassen",
+    text: "Kostenlose Prozess-Analyse sichern",
     href: "/kostenlose-beratung",
     isInternal: true,
   },

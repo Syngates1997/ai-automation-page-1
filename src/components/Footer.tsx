@@ -22,7 +22,7 @@ export const Footer = ({ hideCta = false }: FooterProps) => {
               to="/kostenlose-beratung"
               className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
             >
-              Kostenloses Erstgespräch
+              Kostenlose Prozess-Analyse sichern
             </Link>
           </div>
         )}
@@ -193,12 +193,12 @@ export const Footer = ({ hideCta = false }: FooterProps) => {
               >
                 AGB
               </a>
-              <a
-                href="#"
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent('openCookieSettings'))}
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Cookie-Einstellungen
-              </a>
+              </button>
             </div>
           </div>
         </div>
