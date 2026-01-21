@@ -31,10 +31,9 @@ export const Hero = () => {
         {/* Left: Visual */}
         <div className="relative">
           <div className="aspect-video rounded-xl overflow-hidden border border-border/50 bg-muted">
-            {/* Replace with actual video or image */}
             <img
-              src="https://via.placeholder.com/640x360?text=Video+Thumbnail"
-              alt="Prozessautomatisierung"
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=640&h=360&fit=crop"
+              alt="KI-Automatisierung für Agenturen"
               className="w-full h-full object-cover"
             />
             {/* Play button overlay for video */}
@@ -49,15 +48,15 @@ export const Hero = () => {
         {/* Right: Bullet Points + CTA */}
         <div className="space-y-6">
           <p className="text-sm text-muted-foreground uppercase tracking-widest">
-            Kommt dir das bekannt vor?
+            Das bekommst du:
           </p>
 
-          {/* Bullet Points: Symptome & Frustrationen */}
+          {/* Bullet Points */}
           <ul className="space-y-4">
             {siteConfig.bulletPoints?.map((point, index) => (
               <li key={index} className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-foreground/90 text-lg">{point}</span>
+                <span className="text-foreground/90">{point}</span>
               </li>
             ))}
           </ul>
@@ -74,7 +73,7 @@ export const Hero = () => {
               </Link>
             </Button>
             <p className="text-sm text-muted-foreground mt-3">
-              Kein Verkaufsgespräch. Nur Klarheit.
+              {siteConfig.ctaSubtext}
             </p>
           </div>
         </div>

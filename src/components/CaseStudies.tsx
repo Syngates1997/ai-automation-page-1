@@ -1,27 +1,20 @@
-import { caseStudies, caseStudiesSection } from "@/config/content";
-import { Play, Check } from "lucide-react";
+import { caseStudiesSection, caseStudies } from "@/config/content";
+import { Play } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
-export const Testimonials = () => {
+export const CaseStudies = () => {
   return (
-    <section id="testimonials" className="container py-16 sm:py-20">
+    <section id="case-studies" className="container py-16 sm:py-20">
       {/* Section Header */}
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-elegant mb-4">
-          {caseStudiesSection.headline}{" "}
-          <span className="font-display italic text-primary">
-            {caseStudiesSection.headlineAccent}
-          </span>
+          {caseStudiesSection.headline}
         </h2>
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          {caseStudiesSection.subheadline}
-        </p>
       </div>
 
       {/* Case Studies */}
       <div className="max-w-5xl mx-auto space-y-12">
         {caseStudies.map((study, index) => {
-          // Middle box (index 1) is mirrored
           const isMirrored = index === 1;
 
           return (
@@ -30,11 +23,7 @@ export const Testimonials = () => {
               className="bg-card rounded-2xl border border-border/50 p-8 md:p-12 shadow-sm"
             >
               {/* Upper Section: 2 Columns */}
-              <div
-                className={`grid md:grid-cols-2 gap-8 md:gap-12 ${
-                  isMirrored ? "md:direction-rtl" : ""
-                }`}
-              >
+              <div className={`grid md:grid-cols-2 gap-8 md:gap-12`}>
                 {/* Content Column */}
                 <div className={`space-y-6 ${isMirrored ? "md:order-2" : "md:order-1"}`}>
                   {/* Category */}
@@ -44,16 +33,16 @@ export const Testimonials = () => {
 
                   {/* Title */}
                   <h3 className="text-2xl md:text-3xl font-light text-foreground leading-tight">
-                    {study.title}
+                    {study.title || `${study.results[0]?.value} ${study.results[0]?.label}`}
                   </h3>
 
-                  {/* Challenge */}
+                  {/* Problem */}
                   <div>
                     <p className="text-sm font-semibold text-foreground uppercase tracking-wide mb-2">
-                      Herausforderung
+                      Problem
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      {study.challenge}
+                      {study.problem}
                     </p>
                   </div>
 
@@ -70,10 +59,10 @@ export const Testimonials = () => {
 
                 {/* Video/Image Column */}
                 <div className={`relative pb-8 ${isMirrored ? "md:order-1" : "md:order-2"}`}>
-                  <div className="aspect-video rounded-xl overflow-hidden bg-muted border border-border/50">
+                  <div className="aspect-video rounded-xl overflow-hidden bg-muted border border-border/50 relative">
                     <img
-                      src={study.videoThumbnail}
-                      alt={`${study.author.company} Case Study`}
+                      src={study.videoThumbnail || "https://images.unsplash.com/photo-1551434678-e076c223a692?w=640&h=360&fit=crop"}
+                      alt={`${study.category} Case Study`}
                       className="w-full h-full object-cover"
                     />
                     {/* Play Button Overlay */}
@@ -89,22 +78,22 @@ export const Testimonials = () => {
                     <div className="bg-background rounded-lg border border-border p-3 shadow-md flex items-center gap-3">
                       <Avatar className="h-10 w-10 border border-border">
                         <AvatarImage
-                          alt={study.author.name}
+                          alt={study.author.name || "Author"}
                           src={study.author.image}
                         />
                         <AvatarFallback className="bg-muted text-muted-foreground text-sm">
-                          {(study.author.name || "")
+                          {(study.author.name || "A")
                             .split(" ")
-                            .map((n: string) => n[0])
+                            .map((n) => n[0])
                             .join("")}
                         </AvatarFallback>
                       </Avatar>
                       <div className="min-w-0">
                         <p className="font-medium text-sm text-foreground truncate">
-                          {study.author.name}
+                          {study.author.name || study.author.role}
                         </p>
                         <p className="text-xs text-muted-foreground truncate">
-                          {study.author.title}, {study.author.company}
+                          {study.author.title ? `${study.author.title}, ${study.author.company}` : study.author.role}
                         </p>
                       </div>
                     </div>
@@ -115,34 +104,27 @@ export const Testimonials = () => {
               {/* Divider */}
               <div className="border-t border-border/50 my-8 md:my-10 mt-12 md:mt-14" />
 
-              {/* Lower Section: 3 Columns */}
+              {/* Lower Section: Results + Metrics */}
               <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-                {/* Column 1: Results List */}
+                {/* Quote */}
                 <div>
                   <p className="text-sm font-semibold text-foreground uppercase tracking-wide mb-4">
-                    Ergebnis
+                    Feedback
                   </p>
-                  <ul className="space-y-3">
-                    {study.results.map((result, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">{typeof result === 'object' ? result.label : result}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-muted-foreground italic">{study.quote}</p>
                 </div>
 
-                {/* Column 2 & 3: Big Metrics */}
-                {(study.metrics || []).map((metric: { value: string; label: string }, idx: number) => (
+                {/* Metrics */}
+                {study.results.slice(0, 2).map((result, idx) => (
                   <div
                     key={idx}
                     className="text-center md:text-left p-6 rounded-xl bg-primary/5 border border-primary/20"
                   >
                     <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2">
-                      {metric.value}
+                      {result.value}
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      {metric.label}
+                      {result.label}
                     </p>
                   </div>
                 ))}
@@ -154,3 +136,5 @@ export const Testimonials = () => {
     </section>
   );
 };
+
+export default CaseStudies;
